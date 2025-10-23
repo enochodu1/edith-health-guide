@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edith's Medical Diet Guide - Post-Thyroid Surgery & Diabetes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .emergency-banner {
+            background: #dc2626;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            font-size: 1.3em;
+            text-align: center;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        nav {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #764ba2;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin: 25px 0 15px 0;
+            color: #764ba2;
+        }
+
+        h4 {
+            font-size: 1.4em;
+            margin: 20px 0 10px 0;
+            color: #555;
+        }
+
+        .never-eat {
+            background: #fee2e2;
+            border-left: 5px solid #dc2626;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .never-eat h3 {
+            color: #dc2626;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .never-eat h3::before {
+            content: "🚫";
+            font-size: 1.5em;
+        }
+
+        .safe-eat {
+            background: #d1fae5;
+            border-left: 5px solid #10b981;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .safe-eat h3 {
+            color: #10b981;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .safe-eat h3::before {
+            content: "✅";
+            font-size: 1.5em;
+        }
+
+        .warning {
+            background: #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .warning h3 {
+            color: #f59e0b;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .warning h3::before {
+            content: "⚠️";
+            font-size: 1.5em;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 1.15em;
+            line-height: 1.8;
+        }
+
+        .food-item {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .forbidden {
+            background: #fecaca;
+            border: 2px solid #dc2626;
+            font-weight: bold;
+        }
+
+        .forbidden::before {
+            content: "❌ ";
+            font-size: 1.3em;
+        }
+
+        .allowed {
+            background: #a7f3d0;
+            border: 2px solid #10b981;
+        }
+
+        .allowed::before {
+            content: "✓ ";
+            font-size: 1.3em;
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        .limited {
+            background: #fde68a;
+            border: 2px solid #f59e0b;
+        }
+
+        .limited::before {
+            content: "⚠️ ";
+            font-size: 1.3em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background: #f5f5f5;
+        }
+
+        .meal-card {
+            background: #f9fafb;
+            border: 2px solid #10b981;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        .meal-card h4 {
+            color: #10b981;
+            margin-top: 0;
+        }
+
+        .print-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+
+        .print-btn:hover {
+            background: #764ba2;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            nav, .print-btn {
+                display: none;
+            }
+            section {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            h3 {
+                font-size: 1.3em;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav a {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .medical-reason {
+            background: #e0e7ff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+
+        .medical-reason strong {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏥 Edith's Medical Diet Guide</h1>
+        <p>Post-Thyroid Surgery, Hashimoto's Disease & Type 2 Diabetes</p>
+        <p style="font-size: 0.9em; margin-top: 10px;">Your health depends on following this strictly</p>
+    </header>
+
+    <div class="emergency-banner">
+        🚨 CASSAVA IS POISON FOR YOUR THYROID - NEVER EAT IT 🚨
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#never-eat">🚫 NEVER EAT</a></li>
+            <li><a href="#safe-foods">✅ Safe Foods</a></li>
+            <li><a href="#ghanaian-foods">🇬🇭 Ghanaian Guide</a></li>
+            <li><a href="#meals">🍽️ Sample Meals</a></li>
+            <li><a href="#medications">💊 Medications</a></li>
+            <li><a href="#why">❓ Why This Matters</a></li>
+        </ul>
+    </nav>
+
+    <section id="never-eat">
+        <h2>🚫 ABSOLUTELY NEVER EAT - RED FLAGS</h2>
+
+        <div class="never-eat">
+            <h3>TIER 1: MEDICAL EMERGENCY - Will Make You Sick</h3>
+
+            <h4>1. ALL CASSAVA PRODUCTS (Most Dangerous)</h4>
+            <div class="food-item forbidden">FUFU (cassava-based)</div>
+            <div class="food-item forbidden">BANKU (cassava + corn)</div>
+            <div class="food-item forbidden">GARI (fermented cassava)</div>
+            <div class="food-item forbidden">KONKONTE (dried cassava)</div>
+            <div class="food-item forbidden">CASSAVA FLOUR</div>
+            <div class="food-item forbidden">CASSAVA LEAVES</div>
+            <div class="food-item forbidden">Any dish with cassava</div>
+
+            <div class="medical-reason">
+                <strong>WHY:</strong> You had thyroid surgery. Cassava contains chemicals (goitrogens) that block your thyroid medication and make your body unable to use thyroid hormone. This causes severe fatigue, weight gain, bloating, muscle weakness, and can make you very sick. WITH NO THYROID, CASSAVA IS LIKE POISON.
+            </div>
+
+            <h4>2. ALL FRIED FOODS</h4>
+            <div class="food-item forbidden">Fried plantain (kelewele)</div>
+            <div class="food-item forbidden">Fried yam</div>
+            <div class="food-item forbidden">Fried chicken</div>
+            <div class="food-item forbidden">Fried fish</div>
+            <div class="food-item forbidden">Puff-puff / Bofrot</div>
+            <div class="food-item forbidden">Chinchinga (if fried)</div>
+            <div class="food-item forbidden">Akara (fried bean cakes)</div>
+
+            <div class="medical-reason">
+                <strong>WHY:</strong> Fried foods sit in your stomach for 12-16 hours (normal is 2-4 hours). Your Ozempic medication already slows digestion. Fried food causes SEVERE bloating, pain, nausea. This is why you feel like you're going to explode after eating.
+            </div>
+
+            <h4>3. SUGAR & SWEET DRINKS</h4>
+            <div class="food-item forbidden">Soft drinks (Coke, Fanta, Sprite, Malta)</div>
+            <div class="food-item forbidden">Fruit juice (all types)</div>
+            <div class="food-item forbidden">Sweetened tea</div>
+            <div class="food-item forbidden">Ice cream</div>
+            <div class="food-item forbidden">Candy / Sweets</div>
+            <div class="food-item forbidden">Chocolate</div>
+            <div class="food-item forbidden">Pastries / Cakes / Donuts</div>
+            <div class="food-item forbidden">Cookies / Biscuits</div>
+            <div class="food-item forbidden">Honey (still sugar)</div>
+
+            <div class="medical-reason">
+                <strong>WHY:</strong> You have diabetes. Sugar sends your blood sugar to 250+ (dangerous). Causes weight gain, blocks Ozempic from working, damages kidneys, nerves, eyes. Plus you're ALLERGIC to chocolate (causes nausea).
+            </div>
+
+            <h4>4. HIGH SALT FOODS</h4>
+            <div class="food-item forbidden">Maggi cubes / Knorr cubes</div>
+            <div class="food-item forbidden">Salted fish (koobi, momoni)</div>
+            <div class="food-item forbidden">Smoked fish (if very salty)</div>
+            <div class="food-item forbidden">Canned soups</div>
+            <div class="food-item forbidden">Processed meats (hot dogs, sausages)</div>
+            <div class="food-item forbidden">Restaurant jollof rice (very high salt)</div>
+            <div class="food-item forbidden">Chips / Crackers</div>
+
+            <div class="medical-reason">
+                <strong>WHY:</strong> You take Lasix (water pill) for fluid retention. High salt makes Lasix not work. Your legs swell, you can't walk, you feel bloated. Salt makes your blood pressure go up and makes walking harder.
+            </div>
+
+            <h4>5. ALCOHOL</h4>
+            <div class="food-item forbidden">Beer</div>
+            <div class="food-item forbidden">Wine</div>
+            <div class="food-item forbidden">Spirits</div>
+            <div class="food-item forbidden">Palm wine</div>
+            <div class="food-item forbidden">All alcoholic drinks</div>
+
+            <div class="medical-reason">
+                <strong>WHY:</strong> Blocks thyroid medication, drops blood sugar dangerously low with Ozempic, causes liver damage, interacts with pain medications. Can make you very sick or cause emergency.
+            </div>
+        </div>
+
+        <div class="warning">
+            <h3>TIER 2: Severely Limited (Tiny Portions Only or Eliminate for 3 Months)</h3>
+
+            <h4>Large Starch Portions</h4>
+            <div class="food-item limited">White rice (max 1/2 cup)</div>
+            <div class="food-item limited">Jollof rice (max 1/2 cup)</div>
+            <div class="food-item limited">Waakye (max 1/2 cup)</div>
+            <div class="food-item limited">Fried rice (avoid - fried)</div>
+            <div class="food-item limited">Ripe plantain (yellow/black - max half)</div>
+            <div class="food-item limited">Yam (max 1-2 small pieces)</div>
+            <div class="food-item limited">Bread (max 1 slice whole grain)</div>
+            <div class="food-item limited">Kenkey (max 1 small piece)</div>
+
+            <h4>High-Fat Meats</h4>
+            <div class="food-item limited">Goat head / Cow foot</div>
+            <div class="food-item limited">Fatty beef</div>
+            <div class="food-item limited">Pork (unless very lean)</div>
+            <div class="food-item limited">Chicken skin (remove it)</div>
+
+            <h4>RAW Cruciferous Vegetables (OK if cooked)</h4>
+            <div class="food-item limited">Raw cabbage (COOK IT - then it's safe)</div>
+            <div class="food-item limited">Raw broccoli (COOK IT - then it's safe)</div>
+            <div class="food-item limited">Raw cauliflower (COOK IT - then it's safe)</div>
+        </div>
+
+        <button class="print-btn" onclick="window.print()">🖨️ Print This Page</button>
+    </section>
+
+    <section id="safe-foods">
+        <h2>✅ SAFE FOODS - Eat These Freely</h2>
+
+        <div class="safe-eat">
+            <h3>PROTEINS (Your Main Focus - Eat At Every Meal)</h3>
+
+            <div class="food-item allowed">SARDINES (You love these - excellent choice!)</div>
+            <div class="food-item allowed">Grilled tilapia</div>
+            <div class="food-item allowed">Grilled mackerel</div>
+            <div class="food-item allowed">Baked/steamed fish (any type)</div>
+            <div class="food-item allowed">Grilled chicken (no skin)</div>
+            <div class="food-item allowed">Boiled eggs</div>
+            <div class="food-item allowed">Beans (black-eyed peas, red beans)</div>
+            <div class="food-item allowed">Groundnuts (small handful)</div>
+            <div class="food-item allowed">Lean goat (stewed, not fried)</div>
+            <div class="food-item allowed">Turkey</div>
+
+            <div class="medical-reason">
+                <strong>SARDINES ARE PERFECT:</strong> High protein, omega-3 (good for heart), low mercury, helps with weight loss, good for thyroid function. Eat canned sardines in water or oil (not fried). You can eat sardines daily!
+            </div>
+        </div>
+
+        <div class="safe-eat">
+            <h3>VEGETABLES (Unlimited - Eat 2-3 Cups Daily)</h3>
+
+            <div class="food-item allowed">KONTOMIRE (cocoyam leaves - EXCELLENT!)</div>
+            <div class="food-item allowed">OKRA (fresh or dried - very good)</div>
+            <div class="food-item allowed">Garden eggs (eggplant)</div>
+            <div class="food-item allowed">Spinach</div>
+            <div class="food-item allowed">Cabbage (cooked only)</div>
+            <div class="food-item allowed">Tomatoes</div>
+            <div class="food-item allowed">Onions</div>
+            <div class="food-item allowed">Peppers (all types)</div>
+            <div class="food-item allowed">Lettuce / Salad greens</div>
+            <div class="food-item allowed">Green beans</div>
+            <div class="food-item allowed">Carrots</div>
+            <div class="food-item allowed">Cucumbers</div>
+
+            <div class="medical-reason">
+                <strong>WHY VEGETABLES:</strong> Help you feel full, help you poop (constipation relief), low calories for weight loss, vitamins for energy, help control blood sugar.
+            </div>
+        </div>
+
+        <div class="safe-eat">
+            <h3>SAFE STARCHES (Small Portions Only - Size of Your Fist or Less)</h3>
+
+            <div class="food-item allowed">YAM FUFU (pounded yam - NO cassava)</div>
+            <div class="food-item allowed">PLANTAIN FUFU (pounded plantain - NO cassava)</div>
+            <div class="food-item allowed">Boiled yam (1-2 small pieces)</div>
+            <div class="food-item allowed">Boiled cocoyam</div>
+            <div class="food-item allowed">Green plantain (boiled, not fried)</div>
+            <div class="food-item allowed">Sweet potato (small portions)</div>
+            <div class="food-item allowed">Brown rice (1/2 cup)</div>
+            <div class="food-item allowed">Oatmeal (plain, 1/2 cup)</div>
+            <div class="food-item allowed">Millet porridge (small bowl)</div>
+
+            <div class="medical-reason">
+                <strong>PORTION SIZE MATTERS:</strong> Starch should be 1/4 of your plate. Protein and vegetables should be 3/4 of your plate.
+            </div>
+        </div>
+
+        <div class="safe-eat">
+            <h3>HEALTHY FATS</h3>
+
+            <div class="food-item allowed">Avocado</div>
+            <div class="food-item allowed">Groundnut paste (small amounts)</div>
+            <div class="food-item allowed">Olive oil (for cooking)</div>
+            <div class="food-item allowed">Palm nut soup (natural palm oil)</div>
+        </div>
+
+        <div class="safe-eat">
+            <h3>SOUPS (Best Choices)</h3>
+
+            <div class="food-item allowed">Light soup (with plenty of fish/chicken)</div>
+            <div class="food-item allowed">Groundnut soup (protein-rich)</div>
+            <div class="food-item allowed">Palm nut soup</div>
+            <div class="food-item allowed">Okra soup</div>
+            <div class="food-item allowed">Kontomire stew</div>
+            <div class="food-item allowed">Garden egg stew</div>
+
+            <div class="medical-reason">
+                <strong>SOUP RULE:</strong> Soup should have MORE meat/fish than liquid. Not watery soup with small meat - thick soup with lots of protein.
+            </div>
+        </div>
+
+        <button class="print-btn" onclick="window.print()">🖨️ Print This Page</button>
+    </section>
+
+    <section id="ghanaian-foods">
+        <h2>🇬🇭 Ghanaian Foods Guide</h2>
+
+        <h3>Complete A-Z Ghanaian Food List</h3>
+
+        <table>
+            <tr>
+                <th>Food</th>
+                <th>Status</th>
+                <th>Notes</th>
+            </tr>
+            <tr style="background: #fecaca;">
+                <td><strong>Fufu (cassava)</strong></td>
+                <td>❌ NEVER</td>
+                <td>Contains cassava - blocks thyroid medication</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Fufu (yam only)</strong></td>
+                <td>✅ OK</td>
+                <td>Small portion (fist-size). No cassava mixed in</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Fufu (plantain)</strong></td>
+                <td>✅ OK</td>
+                <td>Small portion (fist-size). Good alternative</td>
+            </tr>
+            <tr style="background: #fecaca;">
+                <td><strong>Banku</strong></td>
+                <td>❌ NEVER</td>
+                <td>Contains cassava - avoid completely</td>
+            </tr>
+            <tr style="background: #fde68a;">
+                <td><strong>Kenkey</strong></td>
+                <td>⚠️ LIMITED</td>
+                <td>1 small piece max. Mostly corn, some cassava</td>
+            </tr>
+            <tr style="background: #fde68a;">
+                <td><strong>Jollof Rice</strong></td>
+                <td>⚠️ LIMITED</td>
+                <td>1/2 cup max. Restaurant versions too salty - avoid</td>
+            </tr>
+            <tr style="background: #fde68a;">
+                <td><strong>Waakye</strong></td>
+                <td>⚠️ LIMITED</td>
+                <td>1/2 cup max. Choose more protein sides, less rice</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Red-Red</strong></td>
+                <td>✅ OK</td>
+                <td>Beans are good! But NO fried plantain with it</td>
+            </tr>
+            <tr style="background: #fecaca;">
+                <td><strong>Gari (cassava)</strong></td>
+                <td>❌ NEVER</td>
+                <td>Made from cassava - avoid</td>
+            </tr>
+            <tr style="background: #fecaca;">
+                <td><strong>Konkonte</strong></td>
+                <td>❌ NEVER</td>
+                <td>Dried cassava - avoid</td>
+            </tr>
+            <tr style="background: #fecaca;">
+                <td><strong>Kelewele (fried plantain)</strong></td>
+                <td>❌ NEVER</td>
+                <td>Fried - causes severe bloating</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Plantain (boiled)</strong></td>
+                <td>✅ OK</td>
+                <td>Green/yellow only (not ripe). Half a plantain max</td>
+            </tr>
+            <tr style="background: #fecaca;">
+                <td><strong>Puff-puff / Bofrot</strong></td>
+                <td>❌ NEVER</td>
+                <td>Fried + sugar - very bad</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Groundnut soup</strong></td>
+                <td>✅ EXCELLENT</td>
+                <td>High protein, filling. Eat with small yam fufu</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Light soup</strong></td>
+                <td>✅ OK</td>
+                <td>Must have plenty of fish/chicken. Not watery</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Palm nut soup</strong></td>
+                <td>✅ EXCELLENT</td>
+                <td>Healthy fats, filling, good for you</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Kontomire (cocoyam leaves)</strong></td>
+                <td>✅ EXCELLENT</td>
+                <td>Very healthy! High in iron, potassium. Eat often</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Okra (fresh or dried)</strong></td>
+                <td>✅ EXCELLENT</td>
+                <td>Helps with constipation, blood sugar. Very good</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Garden eggs</strong></td>
+                <td>✅ EXCELLENT</td>
+                <td>Low carb, filling, good for diabetes</td>
+            </tr>
+            <tr style="background: #fecaca;">
+                <td><strong>Chinchinga (fried)</strong></td>
+                <td>❌ NEVER</td>
+                <td>If fried - avoid</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Chinchinga (grilled)</strong></td>
+                <td>✅ OK</td>
+                <td>If grilled (not fried), lean meat - good</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Grilled tilapia</strong></td>
+                <td>✅ EXCELLENT</td>
+                <td>Perfect protein. Eat often</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Sardines</strong></td>
+                <td>✅ EXCELLENT</td>
+                <td>You love these! Healthy, cheap, good for you</td>
+            </tr>
+            <tr style="background: #fde68a;">
+                <td><strong>Smoked fish</strong></td>
+                <td>⚠️ LIMITED</td>
+                <td>OK if not too salty. Rinse before using</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Fresh fish</strong></td>
+                <td>✅ EXCELLENT</td>
+                <td>Grilled, steamed, or baked - very good</td>
+            </tr>
+            <tr style="background: #fecaca;">
+                <td><strong>Fried fish</strong></td>
+                <td>❌ NEVER</td>
+                <td>Fried - causes bloating</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Beans (all types)</strong></td>
+                <td>✅ EXCELLENT</td>
+                <td>High protein, fiber. Very good for diabetes</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Groundnuts</strong></td>
+                <td>✅ OK</td>
+                <td>Small handful. Good protein/fat</td>
+            </tr>
+            <tr style="background: #fde68a;">
+                <td><strong>Yam (boiled)</strong></td>
+                <td>⚠️ LIMITED</td>
+                <td>1-2 small pieces max</td>
+            </tr>
+            <tr style="background: #fecaca;">
+                <td><strong>Yam (fried)</strong></td>
+                <td>❌ NEVER</td>
+                <td>Fried - avoid</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Cocoyam (boiled)</strong></td>
+                <td>✅ OK</td>
+                <td>Small portions. Good alternative to cassava</td>
+            </tr>
+            <tr style="background: #fde68a;">
+                <td><strong>Sweet potato</strong></td>
+                <td>⚠️ LIMITED</td>
+                <td>Small portions. Better than regular yam for blood sugar</td>
+            </tr>
+            <tr style="background: #fecaca;">
+                <td><strong>Malta / Milo drinks</strong></td>
+                <td>❌ NEVER</td>
+                <td>High sugar - avoid</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Water</strong></td>
+                <td>✅ EXCELLENT</td>
+                <td>Drink 6-8 glasses daily</td>
+            </tr>
+            <tr style="background: #fde68a;">
+                <td><strong>Omo tuo (rice balls)</strong></td>
+                <td>⚠️ LIMITED</td>
+                <td>Small portion. Still rice (high carb)</td>
+            </tr>
+            <tr style="background: #fde68a;">
+                <td><strong>Tuo Zaafi</strong></td>
+                <td>⚠️ LIMITED</td>
+                <td>Small portion. Corn-based - OK in moderation</td>
+            </tr>
+            <tr style="background: #fde68a;">
+                <td><strong>Hausa koko</strong></td>
+                <td>⚠️ LIMITED</td>
+                <td>Small bowl. Don't add sugar</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Millet porridge (plain)</strong></td>
+                <td>✅ OK</td>
+                <td>Small bowl. No sugar. Add groundnut paste</td>
+            </tr>
+            <tr style="background: #fecaca;">
+                <td><strong>Sobolo (sweetened)</strong></td>
+                <td>❌ NEVER</td>
+                <td>High sugar - avoid</td>
+            </tr>
+            <tr style="background: #a7f3d0;">
+                <td><strong>Sobolo (unsweetened)</strong></td>
+                <td>✅ OK</td>
+                <td>No sugar added - hibiscus tea is healthy</td>
+            </tr>
+        </table>
+
+        <h3>Restaurant Ordering Guide</h3>
+
+        <div class="meal-card">
+            <h4>✅ GOOD Restaurant Order Example:</h4>
+            <p><strong>"Grilled tilapia with kontomire and 2 small pieces of boiled yam. No Maggi cube please. Extra vegetables."</strong></p>
+        </div>
+
+        <div class="meal-card" style="border-color: #dc2626; background: #fee2e2;">
+            <h4>❌ BAD Restaurant Order Example:</h4>
+            <p><strong>"Fufu with light soup" - WRONG! Fufu has cassava</strong></p>
+            <p><strong>"Jollof rice with fried chicken and fried plantain" - WRONG! All fried, high salt, large rice portion</strong></p>
+        </div>
+
+        <button class="print-btn" onclick="window.print()">🖨️ Print This Page</button>
+    </section>
+
+    <section id="meals">
+        <h2>🍽️ Sample Meals - What Your Plate Should Look Like</h2>
+
+        <h3>The Perfect Plate Formula:</h3>
+        <div class="medical-reason">
+            <p><strong>1/2 PLATE = Vegetables</strong> (kontomire, okra, salad, garden eggs)</p>
+            <p><strong>1/4 PLATE = Protein</strong> (fish, chicken, eggs, beans)</p>
+            <p><strong>1/4 PLATE = Small Starch</strong> (yam, plantain, brown rice)</p>
+        </div>
+
+        <div class="meal-card">
+            <h4>BREAKFAST Option 1:</h4>
+            <ul>
+                <li>2 boiled eggs</li>
+                <li>Half an avocado</li>
+                <li>1 slice whole grain bread</li>
+                <li>Tea (no sugar)</li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h4>BREAKFAST Option 2:</h4>
+            <ul>
+                <li>Small bowl millet porridge (no sugar)</li>
+                <li>2 tablespoons groundnut paste mixed in</li>
+                <li>1 boiled egg on the side</li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h4>BREAKFAST Option 3 (You'll Love This - Sardines!):</h4>
+            <ul>
+                <li>Canned sardines (in water or oil, not fried)</li>
+                <li>Sliced tomatoes and onions</li>
+                <li>1 slice whole grain bread OR 1 small boiled plantain</li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h4>LUNCH Option 1 (Traditional):</h4>
+            <ul>
+                <li><strong>SMALL yam fufu</strong> (size of your fist, NO CASSAVA)</li>
+                <li><strong>Groundnut soup</strong> (thick, lots of protein)</li>
+                <li><strong>Large piece of chicken or fish</strong></li>
+                <li><strong>Kontomire</strong> (1-2 cups)</li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h4>LUNCH Option 2:</h4>
+            <ul>
+                <li><strong>Palm nut soup</strong></li>
+                <li><strong>Grilled tilapia</strong> (large piece)</li>
+                <li><strong>Garden eggs</strong></li>
+                <li><strong>2 small pieces boiled yam</strong></li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h4>LUNCH Option 3 (Lighter):</h4>
+            <ul>
+                <li><strong>1/2 cup brown rice</strong> (NOT white rice)</li>
+                <li><strong>Chicken stew</strong> (with lots of chicken)</li>
+                <li><strong>Large salad</strong> (lettuce, tomatoes, cucumbers, avocado)</li>
+                <li><strong>Steamed vegetables</strong></li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h4>LUNCH Option 4 (With Sardines - Your Favorite!):</h4>
+            <ul>
+                <li><strong>Sardines</strong> (1 can, grilled or heated)</li>
+                <li><strong>Kontomire stew</strong> (2 cups)</li>
+                <li><strong>2 pieces boiled yam</strong></li>
+                <li><strong>Sliced tomatoes and peppers</strong></li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h4>DINNER (Should Be Lighter Than Lunch):</h4>
+            <ul>
+                <li><strong>Grilled fish</strong> (tilapia, mackerel, or sardines)</li>
+                <li><strong>Okra soup</strong> OR <strong>light soup</strong></li>
+                <li><strong>Steamed vegetables</strong></li>
+                <li><strong>VERY small starch</strong> (1 piece yam) OR <strong>no starch</strong></li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h4>SNACKS (If Hungry Between Meals):</h4>
+            <ul>
+                <li>Small handful of groundnuts</li>
+                <li>1 boiled egg</li>
+                <li>Half an avocado</li>
+                <li>1 small orange</li>
+                <li>Cucumber slices</li>
+            </ul>
+        </div>
+
+        <h3>Weekly Shopping List</h3>
+        <div class="safe-eat">
+            <h4>Buy These Every Week:</h4>
+            <ul>
+                <li>✅ Fresh fish (tilapia, mackerel) - 3-4 pieces</li>
+                <li>✅ Canned sardines - 5-7 cans (since you love them!)</li>
+                <li>✅ Chicken (skinless) - 2-3 lbs</li>
+                <li>✅ Eggs - 1-2 dozen</li>
+                <li>✅ Kontomire (cocoyam leaves) - large bunch</li>
+                <li>✅ Okra - fresh or dried</li>
+                <li>✅ Garden eggs - 10-15</li>
+                <li>✅ Tomatoes - 10-15</li>
+                <li>✅ Onions - 5-6</li>
+                <li>✅ Peppers - assorted</li>
+                <li>✅ Spinach or lettuce - 2 bunches</li>
+                <li>✅ Yam - 2-3 small yams (for yam fufu or boiled)</li>
+                <li>✅ Green plantain - 4-6 (not ripe)</li>
+                <li>✅ Avocados - 3-4</li>
+                <li>✅ Groundnuts/groundnut paste</li>
+                <li>✅ Beans (black-eyed peas)</li>
+                <li>✅ Brown rice - 1 bag</li>
+                <li>✅ Whole grain bread - 1 loaf</li>
+            </ul>
+        </div>
+
+        <button class="print-btn" onclick="window.print()">🖨️ Print This Page</button>
+    </section>
+
+    <section id="why">
+        <h2>❓ Why This Diet Matters - Your Medical Conditions</h2>
+
+        <div class="medical-reason">
+            <h3>Your Health History:</h3>
+            <ul>
+                <li><strong>2015:</strong> Thyroid surgery (removed thyroid because it was choking you)</li>
+                <li><strong>2015:</strong> Larynx surgery (to save your airway)</li>
+                <li><strong>Hashimoto's disease:</strong> Your immune system attacked your thyroid</li>
+                <li><strong>Riedel's thyroiditis:</strong> Rare aggressive thyroid disease with fibrous tissue</li>
+                <li><strong>2017:</strong> Prediabetes diagnosed</li>
+                <li><strong>2022:</strong> Full Type 2 diabetes (because diet didn't change)</li>
+                <li><strong>Current weight:</strong> 267 lbs (need to lose 40-60 lbs)</li>
+                <li><strong>Both parents:</strong> Died from diabetes and high blood pressure complications</li>
+            </ul>
+        </div>
+
+        <h3>Why You MUST Follow This Diet:</h3>
+
+        <div class="never-eat">
+            <h4>1. Cassava = Poison for Your Thyroid</h4>
+            <p>You have NO working thyroid. You are 100% dependent on thyroid pills (Levothyroxine + Liothyronine). Cassava contains chemicals called goitrogens that <strong>BLOCK your thyroid medication from working</strong>.</p>
+            <p><strong>Result if you eat cassava:</strong> Extreme fatigue, cannot walk, severe bloating, constipation, muscle weakness, weight gain, depression, pain everywhere.</p>
+            <p><strong>The surgery removed your thyroid to save your life in 2015. Don't undo that by eating cassava.</strong></p>
+        </div>
+
+        <div class="never-eat">
+            <h4>2. Fried Foods = Why You Can't Walk and Feel Bloated</h4>
+            <p>You're on Ozempic 2 mg (maximum dose). This slows your stomach. Your thyroid surgery also slows digestion. You also take codeine (Tylenol #3) which slows your gut.</p>
+            <p><strong>When you eat fried food:</strong> It sits in your stomach for 12-16 hours (normal is 2-4 hours). This causes SEVERE bloating that makes you feel like you're going to explode.</p>
+            <p><strong>This is why you can't walk - your stomach is so full you can barely move.</strong></p>
+        </div>
+
+        <div class="never-eat">
+            <h4>3. Sugar = Destroying Your Body With Diabetes</h4>
+            <p>You went from prediabetes (2017) to full diabetes (2022) in 5 years. Your parents both died from diabetes complications.</p>
+            <p><strong>If you keep eating sugar and large starches:</strong></p>
+            <ul>
+                <li>Nerve damage (can't feel feet, more pain)</li>
+                <li>Kidney failure (dialysis 3x per week)</li>
+                <li>Vision loss (blindness)</li>
+                <li>Amputations (lose toes, feet, legs)</li>
+                <li>Heart attack, stroke</li>
+                <li><strong>Same fate as your parents</strong></li>
+            </ul>
+            <p><strong>You're on the maximum Ozempic dose. If this doesn't work with diet changes, you're out of options.</strong></p>
+        </div>
+
+        <div class="never-eat">
+            <h4>4. High Salt = Why Your Legs Swell and You Can't Walk</h4>
+            <p>You take Lasix (water pill) to remove excess fluid. When you eat high salt (Maggi cubes, salted fish, restaurant food), the salt cancels out the Lasix.</p>
+            <p><strong>Result:</strong> Legs swell up, can't walk, fluid in lungs (can't breathe), high blood pressure, heart strain.</p>
+        </div>
+
+        <div class="warning">
+            <h4>Current Medications (22 items):</h4>
+            <p>You're on 22 medications. Many of them are treating SYMPTOMS of your diet:</p>
+            <ul>
+                <li><strong>Ozempic</strong> - fighting diabetes from high-carb diet</li>
+                <li><strong>Lasix</strong> - fighting fluid retention from high salt</li>
+                <li><strong>Tylenol #3, Baclofen</strong> - fighting pain from excess weight on joints</li>
+                <li><strong>Thyroid meds</strong> - blocked by cassava consumption</li>
+                <li><strong>Lasix</strong> - not working because of high salt intake</li>
+            </ul>
+            <p><strong>If you change your diet, you can reduce medications and feel 1000x better.</strong></p>
+        </div>
+
+        <h3>What Happens If You Follow This Diet:</h3>
+
+        <div class="safe-eat">
+            <h4>Next 1-2 Weeks:</h4>
+            <ul>
+                <li>✅ Bloating reduces by 50-70%</li>
+                <li>✅ Can walk more easily (less stomach pressure)</li>
+                <li>✅ Less constipation</li>
+                <li>✅ More energy</li>
+                <li>✅ Less pain</li>
+            </ul>
+        </div>
+
+        <div class="safe-eat">
+            <h4>Next 1-3 Months:</h4>
+            <ul>
+                <li>✅ Lose 10-20 lbs</li>
+                <li>✅ Blood sugar drops to normal range</li>
+                <li>✅ Can walk without severe pain</li>
+                <li>✅ Leg swelling reduces</li>
+                <li>✅ Sleep better</li>
+                <li>✅ Thyroid medication works properly</li>
+            </ul>
+        </div>
+
+        <div class="safe-eat">
+            <h4>Next 6-12 Months:</h4>
+            <ul>
+                <li>✅ Lose 40-60 lbs (Ozempic + diet working together)</li>
+                <li>✅ Diabetes under control (A1C below 7%)</li>
+                <li>✅ Walk normally, no walker needed</li>
+                <li>✅ Reduce or eliminate some medications</li>
+                <li>✅ Knee and back pain reduced 50-70%</li>
+                <li>✅ Avoid kidney damage, nerve damage, vision loss</li>
+                <li>✅ <strong>Break the cycle that killed your parents</strong></li>
+            </ul>
+        </div>
+
+        <h3>Emergency Contacts:</h3>
+        <div class="medical-reason">
+            <p><strong>Hospital:</strong> Parkland Health</p>
+            <br>
+            <p><strong>Call doctor if:</strong></p>
+            <ul>
+                <li>Blood sugar over 250 or under 70</li>
+                <li>Severe bloating/pain for more than 24 hours</li>
+                <li>No bowel movement for 5+ days</li>
+                <li>Cannot walk at all</li>
+                <li>Extreme muscle weakness</li>
+                <li>Chest pain, shortness of breath</li>
+                <li>Vomiting for more than 24 hours</li>
+            </ul>
+        </div>
+
+        <button class="print-btn" onclick="window.print()">🖨️ Print This Page</button>
+    </section>
+
+    <section id="medications">
+        <h2>💊 Your Medications - What You Need to Know</h2>
+
+        <div class="emergency-banner" style="margin-bottom: 20px;">
+            ⚠️ YOU ARE ON 22 MEDICATIONS - Some Don't Mix Well Together ⚠️
+        </div>
+
+        <h3>Complete Medication List (What Each One Does)</h3>
+
+        <table>
+            <tr>
+                <th>Medication</th>
+                <th>What It's For</th>
+                <th>Main Side Effects</th>
+            </tr>
+            <tr>
+                <td><strong>Levothyroxine 50 mcg</strong></td>
+                <td>Thyroid hormone replacement (T4)</td>
+                <td>Hair loss if too high, fatigue if too low</td>
+            </tr>
+            <tr>
+                <td><strong>Liothyronine 2.5 mcg</strong></td>
+                <td>Thyroid hormone replacement (T3)</td>
+                <td>Heart racing if too high, tiredness if too low</td>
+            </tr>
+            <tr>
+                <td><strong>Ozempic 2 mg weekly</strong></td>
+                <td>Diabetes + weight loss</td>
+                <td><strong>SEVERE BLOATING, nausea, constipation, slowed stomach</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Furosemide 20 mg (Lasix)</strong></td>
+                <td>Remove excess fluid (water pill)</td>
+                <td><strong>Low potassium (dangerous!), weakness, frequent urination</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Rosuvastatin 10 mg</strong></td>
+                <td>Lower cholesterol</td>
+                <td><strong>Muscle pain, weakness (especially with low potassium)</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Tylenol #3 (codeine)</strong></td>
+                <td>Pain relief</td>
+                <td><strong>SEVERE CONSTIPATION, drowsiness, addiction risk</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Baclofen 10 mg</strong></td>
+                <td>Muscle relaxant for pain</td>
+                <td><strong>Drowsiness, weakness, dizziness</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Jinteli</strong></td>
+                <td>Hormone replacement (menopause)</td>
+                <td>Bloating, breast tenderness, mood changes</td>
+            </tr>
+            <tr>
+                <td><strong>Ergocalciferol 50,000 units</strong></td>
+                <td>Vitamin D (severe deficiency)</td>
+                <td>None usually, unless too much (nausea)</td>
+            </tr>
+            <tr>
+                <td><strong>Albuterol inhaler</strong></td>
+                <td>Breathing/asthma</td>
+                <td>Shaky hands, fast heartbeat</td>
+            </tr>
+            <tr>
+                <td><strong>Azelastine nasal spray</strong></td>
+                <td>Allergies</td>
+                <td>Bitter taste, drowsiness</td>
+            </tr>
+            <tr>
+                <td><strong>Fluticasone nasal spray</strong></td>
+                <td>Allergies/inflammation</td>
+                <td>Nosebleeds, sore throat</td>
+            </tr>
+            <tr>
+                <td><strong>Chlorhexidine rinse</strong></td>
+                <td>Gum disease/mouth infection</td>
+                <td>Tooth staining (temporary)</td>
+            </tr>
+            <tr>
+                <td><strong>Lidocaine viscous</strong></td>
+                <td>Mouth pain (numbing)</td>
+                <td>Numbness, altered taste</td>
+            </tr>
+            <tr>
+                <td><strong>Mupirocin ointment</strong></td>
+                <td>Skin infection (bacterial)</td>
+                <td>Burning at application site</td>
+            </tr>
+            <tr>
+                <td><strong>Terbinafine cream</strong></td>
+                <td>Fungal infection (skin)</td>
+                <td>Redness, itching</td>
+            </tr>
+            <tr>
+                <td><strong>Triamcinolone ointment</strong></td>
+                <td>Rash/inflammation</td>
+                <td>Skin thinning if used too long</td>
+            </tr>
+            <tr>
+                <td><strong>Blood sugar supplies</strong></td>
+                <td>Monitor diabetes</td>
+                <td>None (testing supplies)</td>
+            </tr>
+        </table>
+
+        <h3>🚨 DANGEROUS COMBINATIONS - Never Take Together</h3>
+
+        <div class="never-eat">
+            <h4>1. Tylenol #3 (Codeine) + Baclofen = EXTREME DROWSINESS</h4>
+            <div class="medical-reason">
+                <strong>The Problem:</strong> Both make you very sleepy and weak. Together = dangerous drowsiness, can't think clearly, risk of falling.
+                <br><br>
+                <strong>What To Do:</strong>
+                <ul>
+                    <li>DO NOT take both at the same time</li>
+                    <li>If you take Tylenol #3 for pain, wait 6-8 hours before taking Baclofen</li>
+                    <li>NEVER drive or walk stairs after taking both</li>
+                    <li>Better: Ask doctor to switch Tylenol #3 to non-drowsy pain med (like Tylenol regular)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="never-eat">
+            <h4>2. Lasix + Low Potassium = MUSCLE DAMAGE WITH STATIN</h4>
+            <div class="medical-reason">
+                <strong>The Problem:</strong> Lasix flushes potassium out of your body. Low potassium + Rosuvastatin (statin) = severe muscle pain, weakness, muscle breakdown (rhabdomyolysis - DANGEROUS).
+                <br><br>
+                <strong>Symptoms of Low Potassium:</strong>
+                <ul>
+                    <li>Severe muscle weakness (can't stand up)</li>
+                    <li>Leg cramps</li>
+                    <li>Irregular heartbeat</li>
+                    <li>Constipation</li>
+                    <li>Extreme fatigue</li>
+                </ul>
+                <strong>What To Do:</strong>
+                <ul>
+                    <li>Get potassium blood test EVERY 3 MONTHS (not optional!)</li>
+                    <li>You may need potassium supplement pills</li>
+                    <li>Eat high-potassium foods: Avocado, oranges, kontomire, spinach, beans</li>
+                    <li>Tell doctor IMMEDIATELY if you have unexplained muscle pain</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="never-eat">
+            <h4>3. Ozempic + Thyroid Issues = DOUBLE GASTROPARESIS (Why You're So Bloated)</h4>
+            <div class="medical-reason">
+                <strong>The Problem:</strong> You have NO thyroid = slow digestion. Ozempic = slows digestion MORE. Codeine = slows it EVEN MORE.
+                <br><br>
+                <strong>Result:</strong> Food sits in stomach for 12-16 hours (normal is 2-4 hours). Severe bloating, nausea, constipation, can't eat.
+                <br><br>
+                <strong>What To Do:</strong>
+                <ul>
+                    <li>Eat SMALL meals (5-6 times daily, not 3 large)</li>
+                    <li>NO fried foods (sits in stomach forever)</li>
+                    <li>Walk 10 minutes after eating (helps stomach empty)</li>
+                    <li>Stop eating 3-4 hours before bed</li>
+                    <li>Ask doctor: "Should we reduce Ozempic from 2 mg to 1.5 mg to help bloating?"</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="never-eat">
+            <h4>4. Tylenol #3 (Codeine) = SEVERE CONSTIPATION (Getting Worse)</h4>
+            <div class="medical-reason">
+                <strong>The Problem:</strong> Codeine causes SEVERE constipation. You already have slow gut (thyroid + Ozempic). Adding codeine = bowel obstruction risk.
+                <br><br>
+                <strong>What To Do:</strong>
+                <ul>
+                    <li>Take Miralax DAILY (not just when constipated)</li>
+                    <li>Take Docusate (Colace) 100mg twice daily</li>
+                    <li>Drink 8 glasses of water daily</li>
+                    <li>Eat okra daily (helps move bowels)</li>
+                    <li>If no bowel movement for 3 days → call doctor</li>
+                    <li>If no bowel movement for 5 days → GO TO ER (bowel obstruction)</li>
+                    <li>Ask doctor to switch to non-constipating pain med</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>⏰ CRITICAL TIMING RULES</h3>
+
+        <div class="warning">
+            <h4>Thyroid Medications MUST Be Taken Alone</h4>
+            <div class="medical-reason">
+                <p><strong>CURRENT PROBLEM:</strong> If you're taking thyroid meds with food or other medications, they're NOT WORKING. This could be why you feel so tired and can't lose weight.</p>
+                <br>
+                <p><strong>CORRECT SCHEDULE:</strong></p>
+                <table style="margin-top: 15px;">
+                    <tr>
+                        <th>Time</th>
+                        <th>What to Take</th>
+                        <th>Notes</th>
+                    </tr>
+                    <tr style="background: #d1fae5;">
+                        <td><strong>6:00 AM</strong><br>(or when you wake up)</td>
+                        <td>
+                            • Levothyroxine 50 mcg<br>
+                            • Liothyronine 2.5 mcg<br>
+                            • ONLY with water
+                        </td>
+                        <td>
+                            <strong>NOTHING ELSE!</strong><br>
+                            No food, no coffee, no other pills
+                        </td>
+                    </tr>
+                    <tr style="background: #fef3c7;">
+                        <td><strong>7:00-7:30 AM</strong><br>(60 minutes later)</td>
+                        <td>
+                            NOW you can eat breakfast<br>
+                            and take other morning meds
+                        </td>
+                        <td>
+                            Must wait full 60 minutes
+                        </td>
+                    </tr>
+                    <tr style="background: #d1fae5;">
+                        <td><strong>7:00-7:30 AM</strong><br>(with breakfast)</td>
+                        <td>
+                            • Furosemide (Lasix)<br>
+                            • Rosuvastatin<br>
+                            • Jinteli<br>
+                            • Nasal sprays<br>
+                            • Any other morning meds
+                        </td>
+                        <td>
+                            Take with food to avoid upset stomach
+                        </td>
+                    </tr>
+                    <tr style="background: #fef3c7;">
+                        <td><strong>Bedtime</strong></td>
+                        <td>
+                            • Chlorhexidine rinse<br>
+                            • Any evening meds
+                        </td>
+                        <td>
+                            At least 4 hours after thyroid meds
+                        </td>
+                    </tr>
+                    <tr style="background: #d1fae5;">
+                        <td><strong>Weekly (same day)</strong></td>
+                        <td>
+                            • Ozempic 2 mg injection<br>
+                            (subcutaneous - under skin)
+                        </td>
+                        <td>
+                            Pick same day each week<br>
+                            (e.g., every Sunday)
+                        </td>
+                    </tr>
+                    <tr style="background: #fef3c7;">
+                        <td><strong>Monthly</strong></td>
+                        <td>
+                            • Vitamin D 50,000 units
+                        </td>
+                        <td>
+                            Same date each month<br>
+                            (e.g., 1st of month)
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <h3>🍽️ FOODS THAT BLOCK YOUR MEDICATIONS</h3>
+
+        <div class="never-eat">
+            <h4>Foods That Block Thyroid Medication (Don't Eat Within 4 Hours)</h4>
+            <ul>
+                <li>❌ <strong>CASSAVA</strong> (blocks iodine, prevents thyroid hormone from working)</li>
+                <li>❌ <strong>Calcium supplements</strong> (blocks absorption by 50%)</li>
+                <li>❌ <strong>Iron supplements</strong> (blocks absorption)</li>
+                <li>❌ <strong>Coffee</strong> (reduces absorption by 30% - wait 60 minutes after thyroid med)</li>
+                <li>❌ <strong>Soy products</strong> (large amounts interfere with thyroid)</li>
+                <li>❌ <strong>Raw cabbage/broccoli</strong> (goitrogens - COOK them and they're safe)</li>
+            </ul>
+        </div>
+
+        <div class="never-eat">
+            <h4>Foods That Block Rosuvastatin (Statin)</h4>
+            <ul>
+                <li>❌ <strong>Grapefruit juice</strong> (increases statin levels = muscle damage risk)</li>
+                <li>❌ <strong>Seville oranges</strong> (same as grapefruit)</li>
+                <li>❌ <strong>Pomelos</strong> (same as grapefruit)</li>
+            </ul>
+        </div>
+
+        <div class="never-eat">
+            <h4>Foods That Make Lasix Not Work</h4>
+            <ul>
+                <li>❌ <strong>High salt foods</strong> (Maggi cubes, salted fish, restaurant food)</li>
+                <li>❌ <strong>NSAIDs like ibuprofen/Advil</strong> (reduces Lasix effectiveness)</li>
+            </ul>
+        </div>
+
+        <h3>⚠️ SIDE EFFECTS CAUSING YOUR SYMPTOMS</h3>
+
+        <table>
+            <tr>
+                <th>Your Symptom</th>
+                <th>Which Medication Causes It</th>
+                <th>What To Do</th>
+            </tr>
+            <tr>
+                <td><strong>SEVERE BLOATING</strong></td>
+                <td>
+                    1. Ozempic (slows stomach)<br>
+                    2. Hypothyroidism (no thyroid = slow gut)<br>
+                    3. Codeine (stops gut movement)
+                </td>
+                <td>
+                    • Eat tiny meals (5-6 per day)<br>
+                    • NO fried food<br>
+                    • Walk after eating<br>
+                    • Ask doctor to reduce Ozempic dose
+                </td>
+            </tr>
+            <tr>
+                <td><strong>SEVERE CONSTIPATION</strong></td>
+                <td>
+                    1. Tylenol #3 (codeine) - MAIN CAUSE<br>
+                    2. Ozempic<br>
+                    3. Hypothyroidism
+                </td>
+                <td>
+                    • Miralax DAILY<br>
+                    • Docusate 2x daily<br>
+                    • Magnesium supplement<br>
+                    • Eat okra daily<br>
+                    • Ask to switch from codeine
+                </td>
+            </tr>
+            <tr>
+                <td><strong>MUSCLE WEAKNESS (can't walk)</strong></td>
+                <td>
+                    1. Low potassium (from Lasix) - DANGEROUS<br>
+                    2. Hypothyroidism (thyroid not optimized)<br>
+                    3. Rosuvastatin (statin side effect)<br>
+                    4. Baclofen (muscle relaxant)
+                </td>
+                <td>
+                    • URGENT: Get potassium blood test<br>
+                    • Get thyroid levels checked<br>
+                    • Tell doctor about muscle weakness<br>
+                    • May need potassium supplement
+                </td>
+            </tr>
+            <tr>
+                <td><strong>LEG SWELLING</strong></td>
+                <td>
+                    1. Lasix not working (too much salt in diet)<br>
+                    2. Jinteli (hormone causes fluid retention)
+                </td>
+                <td>
+                    • STOP all high-salt foods<br>
+                    • No Maggi cubes<br>
+                    • Elevate legs 3-4x daily<br>
+                    • Compression stockings<br>
+                    • May need higher Lasix dose
+                </td>
+            </tr>
+            <tr>
+                <td><strong>EXTREME DROWSINESS</strong></td>
+                <td>
+                    1. Tylenol #3 (codeine)<br>
+                    2. Baclofen<br>
+                    3. Azelastine nasal spray
+                </td>
+                <td>
+                    • NEVER take codeine + baclofen together<br>
+                    • Don't drive after taking these<br>
+                    • Ask for non-drowsy pain med
+                </td>
+            </tr>
+            <tr>
+                <td><strong>NAUSEA</strong></td>
+                <td>
+                    1. Ozempic (very common at 2 mg)<br>
+                    2. Chocolate allergy (you have this!)
+                </td>
+                <td>
+                    • Avoid chocolate completely<br>
+                    • Eat small meals<br>
+                    • Ginger tea helps<br>
+                    • If severe, ask to reduce Ozempic
+                </td>
+            </tr>
+        </table>
+
+        <h3>🚨 EMERGENCY WARNING SIGNS - Go to ER Immediately</h3>
+
+        <div class="never-eat">
+            <h4>Call 911 or Go to ER If You Have:</h4>
+            <ul>
+                <li>❌ <strong>Extreme muscle weakness - can't stand up</strong> (low potassium emergency)</li>
+                <li>❌ <strong>Irregular heartbeat, heart racing, chest pain</strong> (low potassium or heart issue)</li>
+                <li>❌ <strong>Dark brown urine + muscle pain</strong> (muscle breakdown from statin - EMERGENCY)</li>
+                <li>❌ <strong>Severe abdominal pain</strong> (could be bowel obstruction from constipation)</li>
+                <li>❌ <strong>No bowel movement for 5+ days with pain</strong> (bowel obstruction)</li>
+                <li>❌ <strong>Vomiting for 24+ hours</strong> (can't keep down fluids)</li>
+                <li>❌ <strong>Blood sugar under 70</strong> (hypoglycemia - dangerous with Ozempic)</li>
+                <li>❌ <strong>Blood sugar over 400</strong> (diabetic emergency)</li>
+                <li>❌ <strong>Can't urinate or very dark urine</strong> (kidney failure from Lasix + Ozempic)</li>
+                <li>❌ <strong>Confusion, dizziness, fainting</strong> (low potassium, low blood sugar, dehydration)</li>
+                <li>❌ <strong>Sudden severe leg swelling in ONE leg only</strong> (blood clot - DVT)</li>
+                <li>❌ <strong>Chest pain + shortness of breath</strong> (heart attack, fluid around heart)</li>
+            </ul>
+        </div>
+
+        <h3>📋 Questions to Ask Your Doctor at Next Appointment</h3>
+
+        <div class="safe-eat">
+            <h4>Print This and Bring to Appointment:</h4>
+            <ol>
+                <li>"What were my last potassium levels? When was it tested? I need it checked every 3 months with Lasix."</li>
+                <li>"What are my current thyroid levels (TSH, Free T4, Free T3)? Are they optimized?"</li>
+                <li>"My thyroid doses seem low (50 mcg levothyroxine) for someone with no thyroid. Should we increase?"</li>
+                <li>"Can we switch Tylenol #3 to regular Tylenol? The codeine causes severe constipation and bloating."</li>
+                <li>"Should I take potassium supplements with Lasix? I have history of low potassium."</li>
+                <li>"My Ozempic dose (2 mg) causes severe bloating. Can we reduce to 1.5 mg temporarily?"</li>
+                <li>"Do I need calcium supplements after thyroid surgery? Could low calcium cause my muscle weakness?"</li>
+                <li>"Should I avoid cassava completely with my thyroid condition?"</li>
+                <li>"I need prescriptions for: Miralax, Docusate, Compression stockings, Walking cane."</li>
+                <li>"Can I get referrals for: Endocrinologist, Gastroenterologist (bloating), Sleep study (sleep apnea), Physical therapy?"</li>
+            </ol>
+        </div>
+
+        <h3>💊 Medication Checklist - Daily Tracking</h3>
+
+        <div class="meal-card">
+            <h4>Print This - Check Off Daily:</h4>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Medication</th>
+                    <th>✓ Done</th>
+                </tr>
+                <tr>
+                    <td>6:00 AM</td>
+                    <td>Levothyroxine 50 mcg (ALONE, just water)</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>6:00 AM</td>
+                    <td>Liothyronine 2.5 mcg (ALONE, just water)</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>7:00 AM</td>
+                    <td>WAIT 60 MINUTES - No food, no coffee</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>7:00-7:30 AM</td>
+                    <td>Furosemide 20 mg (with breakfast)</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>7:00-7:30 AM</td>
+                    <td>Rosuvastatin 10 mg (with breakfast)</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>7:00-7:30 AM</td>
+                    <td>Jinteli (with breakfast)</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>Morning</td>
+                    <td>Azelastine nasal spray (2 sprays each nostril)</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>Morning</td>
+                    <td>Fluticasone nasal spray (2 sprays each nostril)</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>Morning</td>
+                    <td>Blood sugar test (fasting)</td>
+                    <td>☐ _____</td>
+                </tr>
+                <tr>
+                    <td>Evening</td>
+                    <td>Azelastine nasal spray (2 sprays each nostril)</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>Evening</td>
+                    <td>Chlorhexidine rinse (15 mL, spit out)</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>Bedtime</td>
+                    <td>Chlorhexidine rinse (15 mL, spit out)</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>Daily</td>
+                    <td>Miralax (for constipation prevention)</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>Twice daily</td>
+                    <td>Docusate/Colace 100mg (stool softener)</td>
+                    <td>☐ ☐</td>
+                </tr>
+                <tr>
+                    <td>As needed</td>
+                    <td>Tylenol #3 (pain) - MAX 4 per day</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>As needed</td>
+                    <td>Baclofen (muscle pain) - NOT with codeine</td>
+                    <td>☐</td>
+                </tr>
+                <tr>
+                    <td>As needed</td>
+                    <td>Albuterol inhaler (breathing)</td>
+                    <td>☐</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="print-btn" onclick="window.print()">🖨️ Print This Page</button>
+    </section>
+
+    <footer style="text-align: center; padding: 30px; color: #666; margin-top: 50px; border-top: 2px solid #ddd;">
+        <p style="font-size: 1.2em; margin-bottom: 10px;"><strong>Remember:</strong></p>
+        <p style="font-size: 1.5em; color: #667eea; font-weight: bold;">You can still eat Ghanaian food!</p>
+        <p style="font-size: 1.3em; margin-top: 10px;">Just choose: Yam fufu (not cassava), grilled fish, kontomire, okra, small portions.</p>
+        <p style="font-size: 1.2em; margin-top: 20px; color: #dc2626; font-weight: bold;">Cassava, fried foods, and large starches are what's making you sick.</p>
+        <p style="font-size: 1em; margin-top: 20px; color: #888;">Created with love for Edith Botsio - October 2025</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>

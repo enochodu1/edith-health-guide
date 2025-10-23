@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edith's Food Guide - SIMPLE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            line-height: 1.6;
+            color: #000;
+            padding: 15px;
+            background: #fff;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            margin: 20px 0;
+            padding: 30px;
+            background: #667eea;
+            color: white;
+            border-radius: 15px;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin: 30px 0 20px 0;
+            padding: 20px;
+            background: #f0f0f0;
+            border-left: 8px solid #667eea;
+        }
+
+        .big-warning {
+            background: #ff0000;
+            color: white;
+            padding: 30px;
+            margin: 20px 0;
+            font-size: 36px;
+            text-align: center;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 25px;
+            background: #f9f9f9;
+            border-radius: 15px;
+        }
+
+        .never {
+            background: #ffcccc;
+            border: 5px solid #ff0000;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
+        .never h3 {
+            font-size: 36px;
+            color: #ff0000;
+            margin-bottom: 15px;
+        }
+
+        .safe {
+            background: #ccffcc;
+            border: 5px solid #00aa00;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
+        .safe h3 {
+            font-size: 36px;
+            color: #00aa00;
+            margin-bottom: 15px;
+        }
+
+        .food-box {
+            font-size: 28px;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .red-box {
+            background: #ff6666;
+            color: white;
+            border: 4px solid #ff0000;
+        }
+
+        .green-box {
+            background: #66ff66;
+            color: #000;
+            border: 4px solid #00aa00;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 25px;
+            margin: 15px 0;
+            font-size: 32px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .simple-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .simple-list li {
+            font-size: 28px;
+            padding: 20px;
+            margin: 15px 0;
+            background: white;
+            border-radius: 10px;
+            border-left: 6px solid #667eea;
+        }
+
+        .pill-time {
+            background: #fff3cd;
+            border: 4px solid #ffc107;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
+        .pill-time h3 {
+            font-size: 36px;
+            color: #856404;
+            margin-bottom: 15px;
+        }
+
+        @media print {
+            body {
+                font-size: 18px;
+            }
+            h1 { font-size: 32px; }
+            h2 { font-size: 28px; }
+            .food-box { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🏥 Mom's Food Guide</h1>
+
+    <div class="big-warning">
+        🚨 NEVER EAT CASSAVA 🚨<br>
+        (Fufu, Banku, Gari)
+    </div>
+
+    <button class="button" onclick="window.print()">🖨️ PRINT THIS PAGE</button>
+
+    <h2>❌ NEVER EAT THESE</h2>
+
+    <div class="never">
+        <h3>🚫 #1 DANGER - CASSAVA</h3>
+        <div class="food-box red-box">❌ FUFU (made with cassava)</div>
+        <div class="food-box red-box">❌ BANKU</div>
+        <div class="food-box red-box">❌ GARI</div>
+        <div class="food-box red-box">❌ KONKONTE</div>
+        <p style="font-size: 30px; margin-top: 20px; font-weight: bold;">
+            WHY: Makes your pills not work. Makes you very sick.
+        </p>
+    </div>
+
+    <div class="never">
+        <h3>🚫 FRIED FOOD</h3>
+        <div class="food-box red-box">❌ Fried plantain</div>
+        <div class="food-box red-box">❌ Fried chicken</div>
+        <div class="food-box red-box">❌ Fried fish</div>
+        <div class="food-box red-box">❌ Puff-puff</div>
+        <p style="font-size: 30px; margin-top: 20px; font-weight: bold;">
+            WHY: Makes you bloated. Can't walk. Stomach hurts.
+        </p>
+    </div>
+
+    <div class="never">
+        <h3>🚫 SUGAR & SWEET THINGS</h3>
+        <div class="food-box red-box">❌ Coca-Cola, Fanta, Sprite</div>
+        <div class="food-box red-box">❌ Fruit juice (all types)</div>
+        <div class="food-box red-box">❌ Cake, cookies, candy</div>
+        <div class="food-box red-box">❌ Ice cream</div>
+        <p style="font-size: 30px; margin-top: 20px; font-weight: bold;">
+            WHY: Diabetes. Same thing that killed your parents.
+        </p>
+    </div>
+
+    <div class="never">
+        <h3>🚫 SALTY FOOD</h3>
+        <div class="food-box red-box">❌ Maggi cubes</div>
+        <div class="food-box red-box">❌ Knorr cubes</div>
+        <div class="food-box red-box">❌ Very salty fish</div>
+        <p style="font-size: 30px; margin-top: 20px; font-weight: bold;">
+            WHY: Legs swell. Can't walk. Can't breathe.
+        </p>
+    </div>
+
+    <h2>✅ GOOD FOODS TO EAT</h2>
+
+    <div class="safe">
+        <h3>✅ FISH (Eat A LOT)</h3>
+        <div class="food-box green-box">✅ SARDINES (Your favorite!)</div>
+        <div class="food-box green-box">✅ Grilled tilapia</div>
+        <div class="food-box green-box">✅ Baked fish</div>
+        <div class="food-box green-box">✅ Grilled mackerel</div>
+        <p style="font-size: 30px; margin-top: 20px; font-weight: bold;">
+            Eat fish every day. Very good for you.
+        </p>
+    </div>
+
+    <div class="safe">
+        <h3>✅ VEGETABLES (Eat A LOT)</h3>
+        <div class="food-box green-box">✅ KONTOMIRE (Very good!)</div>
+        <div class="food-box green-box">✅ OKRA</div>
+        <div class="food-box green-box">✅ Garden eggs</div>
+        <div class="food-box green-box">✅ Spinach</div>
+        <div class="food-box green-box">✅ Tomatoes</div>
+        <div class="food-box green-box">✅ Cabbage (cook it first)</div>
+    </div>
+
+    <div class="safe">
+        <h3>✅ SAFE FUFU</h3>
+        <div class="food-box green-box">✅ YAM FUFU (NO cassava mixed in!)</div>
+        <div class="food-box green-box">✅ PLANTAIN FUFU</div>
+        <p style="font-size: 30px; margin-top: 20px; font-weight: bold;">
+            Small piece only. Size of your fist.
+        </p>
+    </div>
+
+    <div class="safe">
+        <h3>✅ OTHER GOOD FOOD</h3>
+        <div class="food-box green-box">✅ Boiled eggs</div>
+        <div class="food-box green-box">✅ Beans</div>
+        <div class="food-box green-box">✅ Groundnuts (small amount)</div>
+        <div class="food-box green-box">✅ Grilled chicken (no skin)</div>
+    </div>
+
+    <h2>💊 YOUR PILLS</h2>
+
+    <div class="pill-time">
+        <h3>⏰ MORNING - 6:00 AM</h3>
+        <p style="font-size: 32px; margin: 20px 0; font-weight: bold;">
+            1️⃣ Wake up<br>
+            2️⃣ Take 2 thyroid pills with water<br>
+            3️⃣ WAIT 1 HOUR - No food! No coffee!<br>
+            4️⃣ After 1 hour, eat breakfast<br>
+            5️⃣ Take other pills with breakfast
+        </p>
+    </div>
+
+    <div class="big-warning" style="font-size: 28px;">
+        ⚠️ NEVER TAKE TYLENOL #3 AND BACLOFEN TOGETHER<br>
+        Makes you very sleepy. Can fall.
+    </div>
+
+    <h2>🚨 CALL DOCTOR IF:</h2>
+
+    <ul class="simple-list">
+        <li>❌ Can't stand up (very weak)</li>
+        <li>❌ No bathroom for 5 days</li>
+        <li>❌ Chest pain</li>
+        <li>❌ Can't breathe</li>
+        <li>❌ Very dark pee</li>
+        <li>❌ Throwing up all day</li>
+    </ul>
+
+    <p style="text-align: center; margin-top: 40px; font-size: 20px;">
+        Call your doctor or go to Parkland Health
+    </p>
+
+    <h2>🍽️ WHAT TO EAT TODAY</h2>
+
+    <div class="section">
+        <h3 style="font-size: 36px; margin-bottom: 20px;">BREAKFAST</h3>
+        <ul class="simple-list">
+            <li>2 boiled eggs</li>
+            <li>1 slice bread</li>
+            <li>Tea (no sugar)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3 style="font-size: 36px; margin-bottom: 20px;">LUNCH</h3>
+        <ul class="simple-list">
+            <li>Big piece of fish or chicken</li>
+            <li>Kontomire or okra (a lot)</li>
+            <li>Small yam fufu (fist size)</li>
+            <li>Groundnut soup</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3 style="font-size: 36px; margin-bottom: 20px;">DINNER</h3>
+        <ul class="simple-list">
+            <li>Sardines</li>
+            <li>Vegetables</li>
+            <li>Very small yam or plantain</li>
+        </ul>
+    </div>
+
+    <div class="big-warning" style="font-size: 32px; margin-top: 50px;">
+        REMEMBER:<br>
+        NO CASSAVA EVER!<br>
+        NO FRIED FOOD!<br>
+        NO SUGAR!<br>
+        NO MAGGI CUBES!
+    </div>
+
+    <button class="button" onclick="window.print()">🖨️ PRINT THIS PAGE</button>
+
+    <p style="text-align: center; margin-top: 40px; font-size: 24px; color: #666;">
+        Made with ❤️ for Mom - October 2025
+    </p>
+
+</body>
+</html>

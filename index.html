@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Guide - Choose Version</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            border: 3px solid #667eea;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .card h2 {
+            font-size: 32px;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .card .description {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .card .best-for {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #065f46;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🏥 Health Guide</h1>
+        <p>Choose the version that works best for you:</p>
+
+        <a href="edith-simple-guide.html">
+            <div class="card">
+                <h2>📱 Simple Guide</h2>
+                <div class="description">
+                    Quick reference with big text and simple words. Perfect for daily use on your phone.
+                </div>
+                <div class="best-for">
+                    ✅ Best for: Daily reference, printing for fridge, phone viewing
+                </div>
+            </div>
+        </a>
+
+        <a href="edith-complete-simple.html">
+            <div class="card">
+                <h2>📋 Complete Simple Guide</h2>
+                <div class="description">
+                    Everything you need to know - foods, medications, symptoms, and more. Easy to read with big text.
+                </div>
+                <div class="best-for">
+                    ✅ Best for: Full understanding, bringing to doctor appointments
+                </div>
+            </div>
+        </a>
+
+        <a href="edith-diet-guide.html">
+            <div class="card">
+                <h2>📚 Detailed Medical Guide</h2>
+                <div class="description">
+                    Complete medical information with all 22 medications, drug interactions, and detailed explanations.
+                </div>
+                <div class="best-for">
+                    ✅ Best for: Caregivers, family members, medical professionals
+                </div>
+            </div>
+        </a>
+
+        <div class="footer">
+            Made with ❤️ - October 2025
+        </div>
+    </div>
+
+</body>
+</html>

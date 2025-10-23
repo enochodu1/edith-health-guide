@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mom's Medication Guide - SIMPLE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            line-height: 1.6;
+            color: #000;
+            padding: 15px;
+            background: #fff;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            margin: 20px 0;
+            padding: 30px;
+            background: #667eea;
+            color: white;
+            border-radius: 15px;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin: 30px 0 20px 0;
+            padding: 20px;
+            background: #f0f0f0;
+            border-left: 8px solid #667eea;
+        }
+
+        h3 {
+            font-size: 32px;
+            margin: 20px 0 10px 0;
+            color: #333;
+        }
+
+        .big-warning {
+            background: #ff0000;
+            color: white;
+            padding: 30px;
+            margin: 20px 0;
+            font-size: 36px;
+            text-align: center;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 25px;
+            background: #f9f9f9;
+            border-radius: 15px;
+        }
+
+        .pill-box {
+            background: #e3f2fd;
+            border: 5px solid #2196f3;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
+        .time-big {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1976d2;
+            margin: 20px 0;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 4px solid #ffc107;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
+        .danger {
+            background: #ffcccc;
+            border: 5px solid #ff0000;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 25px;
+            margin: 15px 0;
+            font-size: 32px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .simple-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .simple-list li {
+            font-size: 28px;
+            padding: 20px;
+            margin: 15px 0;
+            background: white;
+            border-radius: 10px;
+            border-left: 6px solid #667eea;
+        }
+
+        .med-name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1976d2;
+            margin: 15px 0 10px 0;
+        }
+
+        .med-box {
+            background: white;
+            border: 3px solid #2196f3;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        @media print {
+            body { font-size: 18px; }
+            h1 { font-size: 32px; }
+            h2 { font-size: 28px; }
+            .button { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>💊 Mom's Medication Guide</h1>
+
+    <div class="big-warning">
+        You Take 22 Different Pills<br>
+        Follow This Guide Every Day
+    </div>
+
+    <button class="button" onclick="window.print()">🖨️ PRINT THIS PAGE</button>
+
+    <h2>⏰ MORNING ROUTINE - MOST IMPORTANT</h2>
+
+    <div class="pill-box">
+        <h3 style="color: #1976d2;">STEP-BY-STEP - EVERY MORNING</h3>
+
+        <div class="time-big">6:00 AM - When You Wake Up</div>
+        <ul class="simple-list">
+            <li><strong>1️⃣</strong> Take 2 thyroid pills with water ONLY</li>
+            <li><strong>2️⃣</strong> NO FOOD! NO COFFEE! NOTHING!</li>
+            <li><strong>3️⃣</strong> Wait 1 full hour (set timer)</li>
+        </ul>
+
+        <div class="time-big">7:00 AM - After 1 Hour Wait</div>
+        <ul class="simple-list">
+            <li><strong>4️⃣</strong> NOW you can eat breakfast</li>
+            <li><strong>5️⃣</strong> NOW take other morning pills with food</li>
+        </ul>
+    </div>
+
+    <div class="danger">
+        <h3 style="color: #ff0000;">⚠️ WHY THIS MATTERS</h3>
+        <p style="font-size: 30px; margin-top: 15px;">
+            If you eat food or drink coffee with thyroid pills:<br>
+            ❌ Pills don't work<br>
+            ❌ You feel very tired<br>
+            ❌ Can't walk<br>
+            ❌ Gain weight<br>
+        </p>
+        <p style="font-size: 32px; margin-top: 20px; font-weight: bold; text-align: center;">
+            WAIT THE FULL HOUR!
+        </p>
+    </div>
+
+    <h2>📋 DAILY PILL CHECKLIST</h2>
+
+    <div class="section">
+        <h3>Morning Pills (With Breakfast - 7:00 AM)</h3>
+        <div class="med-box">
+            <div class="med-name">💧 Water Pill (Lasix)</div>
+            <p style="font-size: 24px;">What it does: Makes you pee to remove extra water from body</p>
+            <p style="font-size: 24px;"><strong>Side effect:</strong> Makes you pee a lot - stay near bathroom for 2 hours</p>
+        </div>
+
+        <div class="med-box">
+            <div class="med-name">💊 Cholesterol Pill (Rosuvastatin)</div>
+            <p style="font-size: 24px;">What it does: Keeps cholesterol low, protects your heart</p>
+            <p style="font-size: 24px;"><strong>Important:</strong> No grapefruit or grapefruit juice</p>
+        </div>
+
+        <div class="med-box">
+            <div class="med-name">🩸 Hormone Pill (Jinteli)</div>
+            <p style="font-size: 24px;">What it does: Replaces hormones your body doesn't make</p>
+        </div>
+
+        <div class="med-box">
+            <div class="med-name">👃 Nose Sprays</div>
+            <p style="font-size: 24px;">• Azelastine (allergies)</p>
+            <p style="font-size: 24px;">• Fluticasone (swelling in nose)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Every Day Pills (Time Flexible)</h3>
+        <div class="med-box">
+            <div class="med-name">💩 Miralax + Docusate</div>
+            <p style="font-size: 24px;">What it does: Helps you poop</p>
+            <p style="font-size: 24px;"><strong>IMPORTANT:</strong> Take EVERY DAY, not just when constipated!</p>
+        </div>
+
+        <div class="med-box">
+            <div class="med-name">💉 Ozempic Shot</div>
+            <p style="font-size: 24px;">What it does: Controls blood sugar, helps lose weight</p>
+            <p style="font-size: 24px;"><strong>Side effect:</strong> Slows stomach, causes bloating</p>
+            <p style="font-size: 24px;"><strong>Take:</strong> Once per week</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Pain Pills (Only When Needed)</h3>
+        <div class="med-box">
+            <div class="med-name">🤕 Tylenol #3 (with codeine)</div>
+            <p style="font-size: 24px;">What it does: Stops strong pain</p>
+            <p style="font-size: 24px;"><strong>Side effects:</strong> Makes you constipated, sleepy</p>
+            <p style="font-size: 24px; color: #ff0000;"><strong>WARNING:</strong> Don't take with Baclofen!</p>
+        </div>
+
+        <div class="med-box">
+            <div class="med-name">💪 Baclofen</div>
+            <p style="font-size: 24px;">What it does: Relaxes tight muscles</p>
+            <p style="font-size: 24px;"><strong>Side effect:</strong> Makes you sleepy</p>
+            <p style="font-size: 24px; color: #ff0000;"><strong>WARNING:</strong> Don't take with Tylenol #3!</p>
+        </div>
+    </div>
+
+    <h2>🚫 DANGEROUS - NEVER DO THIS</h2>
+
+    <div class="big-warning" style="font-size: 30px;">
+        ⚠️ TYLENOL #3 + BACLOFEN<br>
+        = VERY SLEEPY<br>
+        = CAN FALL DOWN<br>
+        = CAN GET HURT<br><br>
+        Wait 6-8 hours between these two pills!
+    </div>
+
+    <div class="danger">
+        <h3 style="color: #ff0000;">NEVER EAT CASSAVA</h3>
+        <p style="font-size: 28px; margin-top: 15px;">
+            Cassava stops thyroid pills from working.<br>
+            Makes you very tired and sick.<br><br>
+            <strong>Foods with cassava:</strong><br>
+            ❌ Fufu (if made with cassava)<br>
+            ❌ Banku<br>
+            ❌ Gari<br>
+            ❌ Konkonte<br>
+        </p>
+    </div>
+
+    <h2>😣 WHY YOU FEEL BAD</h2>
+
+    <div class="section">
+        <h3>SEVERE BLOATING (Can't Move)</h3>
+        <p style="font-size: 26px; margin: 15px 0;"><strong>Caused by these pills:</strong></p>
+        <ul class="simple-list">
+            <li>Ozempic (slows stomach)</li>
+            <li>Thyroid pills not working (if you eat cassava)</li>
+            <li>Tylenol #3 (stops gut movement)</li>
+        </ul>
+        <p style="font-size: 26px; margin: 15px 0;"><strong>What helps:</strong></p>
+        <ul class="simple-list">
+            <li>Eat tiny meals (6 small meals, not 3 big)</li>
+            <li>Walk 10 minutes after eating</li>
+            <li>Stop eating 3 hours before bed</li>
+            <li>NO fried food</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>CAN'T POOP (Severe Constipation)</h3>
+        <p style="font-size: 26px; margin: 15px 0;"><strong>Caused by these pills:</strong></p>
+        <ul class="simple-list">
+            <li>Tylenol #3 (MAIN CAUSE - codeine)</li>
+            <li>Ozempic</li>
+            <li>Thyroid pills not working</li>
+        </ul>
+        <p style="font-size: 26px; margin: 15px 0;"><strong>What helps:</strong></p>
+        <ul class="simple-list">
+            <li>Take Miralax EVERY DAY</li>
+            <li>Take Docusate 2x daily</li>
+            <li>Drink 8 glasses of water</li>
+            <li>Eat okra every day</li>
+            <li>Walk after meals</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>WEAK / CAN'T WALK</h3>
+        <p style="font-size: 26px; margin: 15px 0;"><strong>Caused by these pills:</strong></p>
+        <ul class="simple-list">
+            <li>Water pill (flushes out potassium)</li>
+            <li>Thyroid pills not working (if you eat cassava)</li>
+        </ul>
+        <p style="font-size: 26px; margin: 15px 0;"><strong>What helps:</strong></p>
+        <ul class="simple-list">
+            <li>Get potassium blood test (URGENT)</li>
+            <li>Eat avocado, oranges, kontomire (high potassium)</li>
+            <li>Ask doctor about potassium supplements</li>
+        </ul>
+    </div>
+
+    <h2>🚨 CALL DOCTOR RIGHT AWAY IF:</h2>
+
+    <div class="danger">
+        <ul class="simple-list">
+            <li>❌ Can't stand up (very weak) - LOW POTASSIUM</li>
+            <li>❌ Heart beating fast or irregular - DANGEROUS</li>
+            <li>❌ Very sleepy, can't wake up - TOO MUCH PAIN PILLS</li>
+            <li>❌ No poop for 5 days - SEVERE CONSTIPATION</li>
+            <li>❌ Chest pain - EMERGENCY</li>
+            <li>❌ Can't breathe - EMERGENCY</li>
+            <li>❌ Dark brown pee - DEHYDRATION</li>
+        </ul>
+        <p style="font-size: 32px; margin-top: 20px; text-align: center; font-weight: bold;">
+            Call your doctor or go to Parkland Health<br>
+            Don't wait!
+        </p>
+    </div>
+
+    <h2>✅ DAILY CHECKLIST</h2>
+
+    <div class="warning">
+        <h3 style="color: #856404;">Every Day - Check Off</h3>
+        <ul class="simple-list">
+            <li>☐ 6:00 AM: Thyroid pills (just water, nothing else)</li>
+            <li>☐ Wait 1 full hour (set timer)</li>
+            <li>☐ 7:00 AM: Breakfast + other morning pills</li>
+            <li>☐ Take Miralax (helps you poop)</li>
+            <li>☐ Take Docusate (stool softener)</li>
+            <li>☐ Test blood sugar (morning)</li>
+            <li>☐ Drink 6-8 glasses of water</li>
+            <li>☐ Evening: Nose sprays</li>
+            <li>☐ NO CASSAVA (fufu, banku, gari)</li>
+            <li>☐ NO Tylenol #3 + Baclofen together</li>
+        </ul>
+    </div>
+
+    <h2>❓ QUESTIONS FOR DOCTOR</h2>
+
+    <div class="warning">
+        <p style="font-size: 26px; font-weight: bold; margin-bottom: 15px;">
+            Print this and bring to next appointment:
+        </p>
+        <ol style="font-size: 24px; margin-left: 30px; line-height: 1.8;">
+            <li>What is my potassium level? When was it tested?</li>
+            <li>What are my thyroid levels (TSH)?</li>
+            <li>Can we switch Tylenol #3 to regular Tylenol? The constipation is very bad.</li>
+            <li>Should I take potassium supplements?</li>
+            <li>Can we reduce Ozempic? The bloating is very bad.</li>
+            <li>Should I avoid cassava completely?</li>
+            <li>I need more Miralax and Docusate prescriptions.</li>
+        </ol>
+    </div>
+
+    <div class="big-warning" style="margin-top: 50px; font-size: 28px;">
+        3 MOST IMPORTANT RULES:<br><br>
+        1️⃣ THYROID PILLS ALONE - WAIT 1 HOUR<br>
+        2️⃣ NO CASSAVA EVER<br>
+        3️⃣ NO TYLENOL #3 + BACLOFEN TOGETHER<br><br>
+        Follow these = Feel much better!
+    </div>
+
+    <button class="button" onclick="window.print()">🖨️ PRINT THIS PAGE</button>
+
+    <p style="text-align: center; margin-top: 40px; font-size: 20px; color: #666;">
+        Made with ❤️ for Mom<br>
+        October 2025
+    </p>
+
+</body>
+</html>

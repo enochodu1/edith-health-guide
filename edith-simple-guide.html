@@ -146,6 +146,36 @@
             margin-bottom: 15px;
         }
 
+        .nav-bar {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-links a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: #667eea;
+            color: white;
+        }
+
         @media print {
             body {
                 font-size: 18px;
@@ -153,10 +183,23 @@
             h1 { font-size: 32px; }
             h2 { font-size: 28px; }
             .food-box { font-size: 20px; }
+            .nav-bar { display: none; }
         }
     </style>
 </head>
 <body>
+
+    <div class="nav-bar">
+        <div class="nav-links">
+            <a href="index.html">🏠 Home</a>
+            <a href="edith-simple-guide.html" style="background: #667eea; color: white;">📱 Simple Guide</a>
+            <a href="edith-medications.html">💊 Medications</a>
+            <a href="edith-supplements-guide.html">✅ Safe Supplements</a>
+            <a href="edith-dangerous-supplements.html">⚠️ Dangerous Supplements</a>
+            <a href="edith-daily-routine.html">📅 Daily Routine</a>
+            <a href="edith-emergency-info.html">🚨 Emergency</a>
+        </div>
+    </div>
 
     <h1>🏥 Mom's Food Guide</h1>
 

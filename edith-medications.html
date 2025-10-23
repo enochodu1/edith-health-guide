@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mom's Medication Guide - SIMPLE</title>
+    <title>Mom's Complete Medication Guide</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            font-size: 24px;
+            font-size: 22px;
             line-height: 1.6;
             color: #000;
             padding: 15px;
@@ -21,7 +21,7 @@
         }
 
         h1 {
-            font-size: 48px;
+            font-size: 44px;
             text-align: center;
             margin: 20px 0;
             padding: 30px;
@@ -31,7 +31,7 @@
         }
 
         h2 {
-            font-size: 40px;
+            font-size: 38px;
             margin: 30px 0 20px 0;
             padding: 20px;
             background: #f0f0f0;
@@ -39,7 +39,7 @@
         }
 
         h3 {
-            font-size: 32px;
+            font-size: 30px;
             margin: 20px 0 10px 0;
             color: #333;
         }
@@ -49,14 +49,14 @@
             color: white;
             padding: 30px;
             margin: 20px 0;
-            font-size: 36px;
+            font-size: 34px;
             text-align: center;
             border-radius: 15px;
             font-weight: bold;
         }
 
         .section {
-            margin: 30px 0;
+            margin: 25px 0;
             padding: 25px;
             background: #f9f9f9;
             border-radius: 15px;
@@ -71,7 +71,7 @@
         }
 
         .time-big {
-            font-size: 36px;
+            font-size: 34px;
             font-weight: bold;
             color: #1976d2;
             margin: 20px 0;
@@ -93,12 +93,20 @@
             border-radius: 15px;
         }
 
+        .good-news {
+            background: #d1fae5;
+            border: 5px solid #10b981;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
         .button {
             display: block;
             width: 100%;
             padding: 25px;
             margin: 15px 0;
-            font-size: 32px;
+            font-size: 30px;
             background: #667eea;
             color: white;
             border: none;
@@ -114,7 +122,7 @@
         }
 
         .simple-list li {
-            font-size: 28px;
+            font-size: 26px;
             padding: 20px;
             margin: 15px 0;
             background: white;
@@ -122,50 +130,69 @@
             border-left: 6px solid #667eea;
         }
 
+        .med-card {
+            background: white;
+            border: 3px solid #2196f3;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
         .med-name {
             font-size: 32px;
             font-weight: bold;
             color: #1976d2;
-            margin: 15px 0 10px 0;
+            margin: 0 0 15px 0;
         }
 
-        .med-box {
-            background: white;
-            border: 3px solid #2196f3;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 10px;
+        .med-details {
+            font-size: 24px;
+            line-height: 1.8;
+        }
+
+        .med-details p {
+            margin: 10px 0;
+        }
+
+        .not-needed {
+            background: #fef3c7;
+            border: 4px solid #f59e0b;
+        }
+
+        .critical {
+            background: #fee2e2;
+            border: 4px solid #dc2626;
         }
 
         @media print {
-            body { font-size: 18px; }
-            h1 { font-size: 32px; }
-            h2 { font-size: 28px; }
+            body { font-size: 16px; }
+            h1 { font-size: 28px; }
+            h2 { font-size: 24px; }
             .button { display: none; }
         }
     </style>
 </head>
 <body>
 
-    <h1>💊 Mom's Medication Guide</h1>
+    <h1>💊 Complete Medication Guide</h1>
 
     <div class="big-warning">
-        You Take 22 Different Pills<br>
-        Follow This Guide Every Day
+        You Take 22 Different Medications<br>
+        Some Treat Problems Caused By Diet
     </div>
 
     <button class="button" onclick="window.print()">🖨️ PRINT THIS PAGE</button>
 
-    <h2>⏰ MORNING ROUTINE - MOST IMPORTANT</h2>
+    <h2>⏰ MOST IMPORTANT - Morning Routine</h2>
 
     <div class="pill-box">
-        <h3 style="color: #1976d2;">STEP-BY-STEP - EVERY MORNING</h3>
+        <h3 style="color: #1976d2;">CRITICAL TIMING - DO THIS EVERY DAY</h3>
 
         <div class="time-big">6:00 AM - When You Wake Up</div>
         <ul class="simple-list">
             <li><strong>1️⃣</strong> Take 2 thyroid pills with water ONLY</li>
-            <li><strong>2️⃣</strong> NO FOOD! NO COFFEE! NOTHING!</li>
-            <li><strong>3️⃣</strong> Wait 1 full hour (set timer)</li>
+            <li><strong>2️⃣</strong> NO FOOD! NO COFFEE! NOTHING ELSE!</li>
+            <li><strong>3️⃣</strong> Wait 1 full hour (set a timer)</li>
         </ul>
 
         <div class="time-big">7:00 AM - After 1 Hour Wait</div>
@@ -176,214 +203,341 @@
     </div>
 
     <div class="danger">
-        <h3 style="color: #ff0000;">⚠️ WHY THIS MATTERS</h3>
-        <p style="font-size: 30px; margin-top: 15px;">
-            If you eat food or drink coffee with thyroid pills:<br>
-            ❌ Pills don't work<br>
-            ❌ You feel very tired<br>
-            ❌ Can't walk<br>
-            ❌ Gain weight<br>
+        <h3 style="color: #ff0000;">⚠️ WHY THIS TIMING MATTERS</h3>
+        <p style="font-size: 28px; margin-top: 15px;">
+            If you eat with thyroid pills:<br>
+            ❌ Pills absorb only 30% (instead of 80%)<br>
+            ❌ You feel exhausted all day<br>
+            ❌ Can't walk - no energy<br>
+            ❌ Can't lose weight<br>
+            ❌ Severe bloating<br>
         </p>
         <p style="font-size: 32px; margin-top: 20px; font-weight: bold; text-align: center;">
-            WAIT THE FULL HOUR!
+            This could be why you feel so bad!
         </p>
     </div>
 
-    <h2>📋 DAILY PILL CHECKLIST</h2>
+    <h2>📋 ALL 22 MEDICATIONS EXPLAINED</h2>
 
-    <div class="section">
-        <h3>Morning Pills (With Breakfast - 7:00 AM)</h3>
-        <div class="med-box">
-            <div class="med-name">💧 Water Pill (Lasix)</div>
-            <p style="font-size: 24px;">What it does: Makes you pee to remove extra water from body</p>
-            <p style="font-size: 24px;"><strong>Side effect:</strong> Makes you pee a lot - stay near bathroom for 2 hours</p>
-        </div>
+    <h3 style="color: #dc2626;">🔴 CRITICAL - Must Take Every Day</h3>
 
-        <div class="med-box">
-            <div class="med-name">💊 Cholesterol Pill (Rosuvastatin)</div>
-            <p style="font-size: 24px;">What it does: Keeps cholesterol low, protects your heart</p>
-            <p style="font-size: 24px;"><strong>Important:</strong> No grapefruit or grapefruit juice</p>
-        </div>
-
-        <div class="med-box">
-            <div class="med-name">🩸 Hormone Pill (Jinteli)</div>
-            <p style="font-size: 24px;">What it does: Replaces hormones your body doesn't make</p>
-        </div>
-
-        <div class="med-box">
-            <div class="med-name">👃 Nose Sprays</div>
-            <p style="font-size: 24px;">• Azelastine (allergies)</p>
-            <p style="font-size: 24px;">• Fluticasone (swelling in nose)</p>
+    <div class="med-card critical">
+        <div class="med-name">1. Levothyroxine 50 mcg (T4 thyroid hormone)</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Replaces thyroid hormone your body can't make (you have NO thyroid)</p>
+            <p><strong>Why you need it:</strong> Without this, you would die. Your body needs thyroid hormone to live</p>
+            <p><strong>Side effects:</strong> Hair loss if dose too high, exhaustion if dose too low</p>
+            <p><strong>Important:</strong> MUST take alone with just water, wait 1 hour before food</p>
+            <p><strong>⚠️ Problem:</strong> Your dose (50 mcg) seems LOW for someone with no thyroid. Most people need 100-150 mcg. Ask doctor to check thyroid levels.</p>
         </div>
     </div>
 
-    <div class="section">
-        <h3>Every Day Pills (Time Flexible)</h3>
-        <div class="med-box">
-            <div class="med-name">💩 Miralax + Docusate</div>
-            <p style="font-size: 24px;">What it does: Helps you poop</p>
-            <p style="font-size: 24px;"><strong>IMPORTANT:</strong> Take EVERY DAY, not just when constipated!</p>
-        </div>
-
-        <div class="med-box">
-            <div class="med-name">💉 Ozempic Shot</div>
-            <p style="font-size: 24px;">What it does: Controls blood sugar, helps lose weight</p>
-            <p style="font-size: 24px;"><strong>Side effect:</strong> Slows stomach, causes bloating</p>
-            <p style="font-size: 24px;"><strong>Take:</strong> Once per week</p>
+    <div class="med-card critical">
+        <div class="med-name">2. Liothyronine 2.5 mcg (T3 thyroid hormone)</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Fast-acting thyroid hormone for immediate energy</p>
+            <p><strong>Why you need it:</strong> Gives you energy when levothyroxine alone isn't enough</p>
+            <p><strong>Side effects:</strong> Heart racing if too high, tiredness if too low</p>
+            <p><strong>Important:</strong> Take with levothyroxine in the morning, just water</p>
+            <p><strong>⚠️ Problem:</strong> Dose also seems low. Most people need 5-10 mcg. Could explain fatigue.</p>
         </div>
     </div>
 
-    <div class="section">
-        <h3>Pain Pills (Only When Needed)</h3>
-        <div class="med-box">
-            <div class="med-name">🤕 Tylenol #3 (with codeine)</div>
-            <p style="font-size: 24px;">What it does: Stops strong pain</p>
-            <p style="font-size: 24px;"><strong>Side effects:</strong> Makes you constipated, sleepy</p>
-            <p style="font-size: 24px; color: #ff0000;"><strong>WARNING:</strong> Don't take with Baclofen!</p>
-        </div>
-
-        <div class="med-box">
-            <div class="med-name">💪 Baclofen</div>
-            <p style="font-size: 24px;">What it does: Relaxes tight muscles</p>
-            <p style="font-size: 24px;"><strong>Side effect:</strong> Makes you sleepy</p>
-            <p style="font-size: 24px; color: #ff0000;"><strong>WARNING:</strong> Don't take with Tylenol #3!</p>
+    <div class="med-card critical">
+        <div class="med-name">3. Ozempic 2 mg (Semaglutide injection)</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Controls blood sugar AND helps you lose weight</p>
+            <p><strong>Why you need it:</strong> You have type 2 diabetes. This is maximum dose.</p>
+            <p><strong>Side effects:</strong> <span style="color: #dc2626;">SEVERE BLOATING, slows stomach, nausea, constipation</span></p>
+            <p><strong>The problem:</strong> This medication slows your stomach down. Combined with no thyroid (also slows stomach) = DOUBLE slowdown = severe bloating</p>
+            <p><strong>💡 Solution:</strong> Ask doctor: "Can we reduce to 1.5 mg temporarily? The bloating is unbearable."</p>
         </div>
     </div>
 
-    <h2>🚫 DANGEROUS - NEVER DO THIS</h2>
+    <div class="med-card critical">
+        <div class="med-name">4. Furosemide 20 mg (Lasix - Water pill)</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Makes you pee to remove extra water from body</p>
+            <p><strong>Why you need it:</strong> Prevents leg swelling and fluid buildup</p>
+            <p><strong>Side effects:</strong> <span style="color: #dc2626;">LOW POTASSIUM (dangerous!), weakness, makes you pee a lot</span></p>
+            <p><strong>⚠️ DANGER:</strong> Flushes potassium out of body. Low potassium + statin = muscle damage. MUST get potassium tested every 3 months!</p>
+            <p><strong>Why doesn't it work?</strong> High-salt foods (Maggi cubes) cancel out this medication</p>
+        </div>
+    </div>
 
-    <div class="big-warning" style="font-size: 30px;">
-        ⚠️ TYLENOL #3 + BACLOFEN<br>
-        = VERY SLEEPY<br>
-        = CAN FALL DOWN<br>
-        = CAN GET HURT<br><br>
-        Wait 6-8 hours between these two pills!
+    <h3 style="color: #f59e0b;">🟡 IMPORTANT - Needed But Can Be Reduced With Diet</h3>
+
+    <div class="med-card">
+        <div class="med-name">5. Rosuvastatin 10 mg (Crestor - Statin)</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Lowers cholesterol to prevent heart attack</p>
+            <p><strong>Why you need it:</strong> High cholesterol from diabetes</p>
+            <p><strong>Side effects:</strong> Muscle pain, weakness (worse with low potassium)</p>
+            <p><strong>⚠️ NEVER eat:</strong> Grapefruit or grapefruit juice (causes muscle damage)</p>
+            <p><strong>💡 Good news:</strong> If you follow diet and lose weight, cholesterol drops and you might need lower dose</p>
+        </div>
+    </div>
+
+    <div class="med-card">
+        <div class="med-name">6. Vitamin D 50,000 units (monthly)</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Treats severe vitamin D deficiency</p>
+            <p><strong>Why you need it:</strong> You have very low vitamin D (common after thyroid surgery)</p>
+            <p><strong>Side effects:</strong> None usually</p>
+            <p><strong>Important:</strong> Take once a month on same date</p>
+        </div>
+    </div>
+
+    <h3 style="color: #f59e0b;">🟠 PAIN MEDICATIONS - Causing More Problems</h3>
+
+    <div class="med-card not-needed">
+        <div class="med-name">7. Tylenol #3 (Acetaminophen + Codeine) ⚠️ PROBLEM MEDICATION</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Stops pain</p>
+            <p><strong>Why you take it:</strong> Joint pain, back pain</p>
+            <p><strong>Side effects:</strong> <span style="color: #dc2626;">SEVERE CONSTIPATION (main cause!), very drowsy, addictive</span></p>
+            <p><strong>The problem:</strong> Codeine STOPS your gut from moving. You already have slow gut (no thyroid + Ozempic). Adding codeine = no bowel movements for days.</p>
+            <p><strong>💡 ASK DOCTOR:</strong> "Can we switch to regular Tylenol (no codeine)? The codeine causes severe constipation."</p>
+            <p><strong>Why pain will improve:</strong> Most pain is from excess weight on joints. Lose 40 lbs = 50-70% less pain = less medication needed</p>
+        </div>
+    </div>
+
+    <div class="med-card not-needed">
+        <div class="med-name">8. Baclofen 10 mg ⚠️ PROBLEM MEDICATION</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Relaxes tight muscles</p>
+            <p><strong>Why you take it:</strong> Muscle spasms, back pain</p>
+            <p><strong>Side effects:</strong> Very drowsy, weak, dizzy</p>
+            <p><strong>⚠️ DANGER:</strong> NEVER take with Tylenol #3 - extreme drowsiness, can fall and get hurt</p>
+            <p><strong>Wait 6-8 hours between these two pills!</strong></p>
+        </div>
+    </div>
+
+    <h3 style="color: #10b981;">🟢 HORMONE REPLACEMENT</h3>
+
+    <div class="med-card">
+        <div class="med-name">9. Jinteli (Estrogen + Progestin)</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Replaces hormones after menopause</p>
+            <p><strong>Why you take it:</strong> Menopause symptoms</p>
+            <p><strong>Side effects:</strong> Bloating, breast tenderness, can cause leg swelling</p>
+            <p><strong>Note:</strong> This adds to your bloating problem</p>
+        </div>
+    </div>
+
+    <h3 style="color: #667eea;">🔵 ALLERGY & BREATHING MEDICATIONS</h3>
+
+    <div class="med-card">
+        <div class="med-name">10. Azelastine nasal spray</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Stops allergies, runny nose</p>
+            <p><strong>Side effects:</strong> Bitter taste, drowsiness</p>
+            <p><strong>Use:</strong> 2 sprays each nostril, morning and evening</p>
+        </div>
+    </div>
+
+    <div class="med-card">
+        <div class="med-name">11. Fluticasone nasal spray</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Reduces nose swelling, allergies</p>
+            <p><strong>Side effects:</strong> Nosebleeds, sore throat</p>
+            <p><strong>Use:</strong> 2 sprays each nostril, morning and evening</p>
+        </div>
+    </div>
+
+    <div class="med-card">
+        <div class="med-name">12. Albuterol inhaler</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Opens airways for breathing</p>
+            <p><strong>Why you need it:</strong> Asthma or breathing problems</p>
+            <p><strong>Side effects:</strong> Shaky hands, fast heartbeat</p>
+            <p><strong>Use:</strong> Only when needed for breathing difficulty</p>
+        </div>
+    </div>
+
+    <h3 style="color: #667eea;">🔵 MOUTH & SKIN MEDICATIONS</h3>
+
+    <div class="med-card">
+        <div class="med-name">13. Chlorhexidine mouth rinse</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Kills bacteria in mouth, treats gum disease</p>
+            <p><strong>Side effects:</strong> Tooth staining (temporary)</p>
+            <p><strong>Use:</strong> Rinse 15 mL (1 capful), swish, spit out. Morning and bedtime.</p>
+        </div>
+    </div>
+
+    <div class="med-card">
+        <div class="med-name">14. Lidocaine viscous gel</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Numbs mouth pain</p>
+            <p><strong>Use:</strong> Apply to sore areas in mouth when needed</p>
+        </div>
+    </div>
+
+    <div class="med-card">
+        <div class="med-name">15. Mupirocin ointment</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Kills bacteria on skin infections</p>
+            <p><strong>Use:</strong> Apply thin layer to infected area 3x daily</p>
+        </div>
+    </div>
+
+    <div class="med-card">
+        <div class="med-name">16. Terbinafine cream</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Kills fungus (athlete's foot, ringworm)</p>
+            <p><strong>Use:</strong> Apply to affected area 2x daily</p>
+        </div>
+    </div>
+
+    <div class="med-card">
+        <div class="med-name">17. Triamcinolone ointment</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Reduces rash, inflammation, itching</p>
+            <p><strong>Warning:</strong> Don't use for more than 2 weeks - causes skin thinning</p>
+        </div>
+    </div>
+
+    <h3 style="color: #10b981;">🟢 CONSTIPATION HELPERS (CRITICAL!)</h3>
+
+    <div class="med-card critical">
+        <div class="med-name">18. Miralax (Polyethylene glycol)</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Softens stool, helps you poop</p>
+            <p><strong>IMPORTANT:</strong> Take EVERY DAY, not just when constipated!</p>
+            <p><strong>Why:</strong> You have 3 things slowing your gut (no thyroid + Ozempic + codeine)</p>
+            <p><strong>Dose:</strong> 1 capful (17 grams) mixed in water or juice, daily</p>
+        </div>
+    </div>
+
+    <div class="med-card critical">
+        <div class="med-name">19. Docusate 100 mg (Colace - Stool softener)</div>
+        <div class="med-details">
+            <p><strong>What it does:</strong> Makes stool soft so it's easier to pass</p>
+            <p><strong>IMPORTANT:</strong> Take 2 times per day, EVERY day</p>
+            <p><strong>Dose:</strong> 100 mg in morning, 100 mg at bedtime</p>
+        </div>
+    </div>
+
+    <h3 style="color: #667eea;">🔵 TESTING SUPPLIES</h3>
+
+    <div class="med-card">
+        <div class="med-name">20-22. Blood sugar testing supplies</div>
+        <div class="med-details">
+            <p><strong>What they are:</strong> Glucose meter, test strips, lancets</p>
+            <p><strong>Why you need them:</strong> Monitor blood sugar daily</p>
+            <p><strong>How often:</strong> Test fasting (before breakfast) every day</p>
+            <p><strong>Goal:</strong> Fasting blood sugar 80-130 mg/dL</p>
+        </div>
+    </div>
+
+    <h2>⚠️ MEDICATIONS THAT MIGHT NOT BE NEEDED</h2>
+
+    <div class="good-news">
+        <h3 style="color: #10b981;">Good News - Some Can Be Reduced!</h3>
+        <p style="font-size: 26px; margin-top: 15px;">
+            If you follow the diet and lose weight, these medications might be reduced or eliminated:
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>1. Tylenol #3 (Codeine) - SHOULD BE CHANGED</h3>
+        <p style="font-size: 24px; margin: 15px 0;">
+            <strong>Why you might not need it:</strong><br>
+            • Most pain is from excess weight on knees and back<br>
+            • Lose 40 lbs = 50-70% less joint pain<br>
+            • Codeine causes severe constipation (makes everything worse)<br>
+            • Regular Tylenol (without codeine) works almost as well for your type of pain
+        </p>
+        <p style="font-size: 26px; color: #10b981; font-weight: bold;">
+            ✅ ASK DOCTOR: "Can we switch to regular Tylenol instead of Tylenol #3?"
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>2. Ozempic - Dose Might Be Reduced</h3>
+        <p style="font-size: 24px; margin: 15px 0;">
+            <strong>Why you might need less:</strong><br>
+            • You're on maximum dose (2 mg)<br>
+            • Causing SEVERE bloating<br>
+            • Temporarily reducing to 1.5 mg might help bloating<br>
+            • After diet changes and weight loss, might not need maximum dose
+        </p>
+        <p style="font-size: 26px; color: #10b981; font-weight: bold;">
+            ✅ ASK DOCTOR: "Can we reduce from 2 mg to 1.5 mg temporarily for bloating?"
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>3. Furosemide (Lasix) - Dose Might Be Reduced</h3>
+        <p style="font-size: 24px; margin: 15px 0;">
+            <strong>Why you might need less:</strong><br>
+            • Leg swelling is partly from high-salt diet<br>
+            • If you stop Maggi cubes and salty foods, legs won't swell as much<br>
+            • Less Lasix needed = less potassium loss = less weakness
+        </p>
+        <p style="font-size: 26px; color: #10b981; font-weight: bold;">
+            ✅ After 3 months of low-salt diet, doctor might reduce dose
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>4. Rosuvastatin (Statin) - Dose Might Be Reduced</h3>
+        <p style="font-size: 24px; margin: 15px 0;">
+            <strong>Why you might need less:</strong><br>
+            • Cholesterol goes down with diet and weight loss<br>
+            • Less fried food = lower cholesterol<br>
+            • More fish and vegetables = healthier cholesterol
+        </p>
+        <p style="font-size: 26px; color: #10b981; font-weight: bold;">
+            ✅ After 6 months of diet changes, cholesterol test might show improvement
+        </p>
+    </div>
+
+    <h2>🚨 DANGEROUS COMBINATIONS - NEVER MIX</h2>
+
+    <div class="big-warning" style="font-size: 28px;">
+        1️⃣ Tylenol #3 + Baclofen<br>
+        = EXTREME DROWSINESS<br>
+        = CAN FALL AND GET HURT<br><br>
+        Wait 6-8 hours between these!
     </div>
 
     <div class="danger">
-        <h3 style="color: #ff0000;">NEVER EAT CASSAVA</h3>
-        <p style="font-size: 28px; margin-top: 15px;">
-            Cassava stops thyroid pills from working.<br>
-            Makes you very tired and sick.<br><br>
-            <strong>Foods with cassava:</strong><br>
-            ❌ Fufu (if made with cassava)<br>
-            ❌ Banku<br>
-            ❌ Gari<br>
-            ❌ Konkonte<br>
-        </p>
-    </div>
-
-    <h2>😣 WHY YOU FEEL BAD</h2>
-
-    <div class="section">
-        <h3>SEVERE BLOATING (Can't Move)</h3>
-        <p style="font-size: 26px; margin: 15px 0;"><strong>Caused by these pills:</strong></p>
+        <h3 style="color: #ff0000;">Other Dangerous Combinations:</h3>
         <ul class="simple-list">
-            <li>Ozempic (slows stomach)</li>
-            <li>Thyroid pills not working (if you eat cassava)</li>
-            <li>Tylenol #3 (stops gut movement)</li>
-        </ul>
-        <p style="font-size: 26px; margin: 15px 0;"><strong>What helps:</strong></p>
-        <ul class="simple-list">
-            <li>Eat tiny meals (6 small meals, not 3 big)</li>
-            <li>Walk 10 minutes after eating</li>
-            <li>Stop eating 3 hours before bed</li>
-            <li>NO fried food</li>
+            <li>❌ Lasix + High-salt food = Lasix doesn't work, legs swell</li>
+            <li>❌ Statin + Grapefruit = Muscle damage</li>
+            <li>❌ Thyroid pills + Food = Pills don't absorb, you feel exhausted</li>
+            <li>❌ Thyroid pills + Coffee = 30% less absorption</li>
+            <li>❌ All medications + Cassava = Thyroid pills stop working</li>
         </ul>
     </div>
 
-    <div class="section">
-        <h3>CAN'T POOP (Severe Constipation)</h3>
-        <p style="font-size: 26px; margin: 15px 0;"><strong>Caused by these pills:</strong></p>
-        <ul class="simple-list">
-            <li>Tylenol #3 (MAIN CAUSE - codeine)</li>
-            <li>Ozempic</li>
-            <li>Thyroid pills not working</li>
-        </ul>
-        <p style="font-size: 26px; margin: 15px 0;"><strong>What helps:</strong></p>
-        <ul class="simple-list">
-            <li>Take Miralax EVERY DAY</li>
-            <li>Take Docusate 2x daily</li>
-            <li>Drink 8 glasses of water</li>
-            <li>Eat okra every day</li>
-            <li>Walk after meals</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h3>WEAK / CAN'T WALK</h3>
-        <p style="font-size: 26px; margin: 15px 0;"><strong>Caused by these pills:</strong></p>
-        <ul class="simple-list">
-            <li>Water pill (flushes out potassium)</li>
-            <li>Thyroid pills not working (if you eat cassava)</li>
-        </ul>
-        <p style="font-size: 26px; margin: 15px 0;"><strong>What helps:</strong></p>
-        <ul class="simple-list">
-            <li>Get potassium blood test (URGENT)</li>
-            <li>Eat avocado, oranges, kontomire (high potassium)</li>
-            <li>Ask doctor about potassium supplements</li>
-        </ul>
-    </div>
-
-    <h2>🚨 CALL DOCTOR RIGHT AWAY IF:</h2>
-
-    <div class="danger">
-        <ul class="simple-list">
-            <li>❌ Can't stand up (very weak) - LOW POTASSIUM</li>
-            <li>❌ Heart beating fast or irregular - DANGEROUS</li>
-            <li>❌ Very sleepy, can't wake up - TOO MUCH PAIN PILLS</li>
-            <li>❌ No poop for 5 days - SEVERE CONSTIPATION</li>
-            <li>❌ Chest pain - EMERGENCY</li>
-            <li>❌ Can't breathe - EMERGENCY</li>
-            <li>❌ Dark brown pee - DEHYDRATION</li>
-        </ul>
-        <p style="font-size: 32px; margin-top: 20px; text-align: center; font-weight: bold;">
-            Call your doctor or go to Parkland Health<br>
-            Don't wait!
-        </p>
-    </div>
-
-    <h2>✅ DAILY CHECKLIST</h2>
+    <h2>📋 QUESTIONS FOR YOUR DOCTOR</h2>
 
     <div class="warning">
-        <h3 style="color: #856404;">Every Day - Check Off</h3>
-        <ul class="simple-list">
-            <li>☐ 6:00 AM: Thyroid pills (just water, nothing else)</li>
-            <li>☐ Wait 1 full hour (set timer)</li>
-            <li>☐ 7:00 AM: Breakfast + other morning pills</li>
-            <li>☐ Take Miralax (helps you poop)</li>
-            <li>☐ Take Docusate (stool softener)</li>
-            <li>☐ Test blood sugar (morning)</li>
-            <li>☐ Drink 6-8 glasses of water</li>
-            <li>☐ Evening: Nose sprays</li>
-            <li>☐ NO CASSAVA (fufu, banku, gari)</li>
-            <li>☐ NO Tylenol #3 + Baclofen together</li>
-        </ul>
-    </div>
-
-    <h2>❓ QUESTIONS FOR DOCTOR</h2>
-
-    <div class="warning">
-        <p style="font-size: 26px; font-weight: bold; margin-bottom: 15px;">
-            Print this and bring to next appointment:
-        </p>
-        <ol style="font-size: 24px; margin-left: 30px; line-height: 1.8;">
-            <li>What is my potassium level? When was it tested?</li>
-            <li>What are my thyroid levels (TSH)?</li>
-            <li>Can we switch Tylenol #3 to regular Tylenol? The constipation is very bad.</li>
-            <li>Should I take potassium supplements?</li>
-            <li>Can we reduce Ozempic? The bloating is very bad.</li>
-            <li>Should I avoid cassava completely?</li>
-            <li>I need more Miralax and Docusate prescriptions.</li>
+        <h3 style="color: #856404;">Print This - Bring to Appointment</h3>
+        <ol style="font-size: 24px; margin-left: 30px; line-height: 1.8; margin-top: 20px;">
+            <li><strong>Potassium:</strong> "What was my last potassium level? I need it checked every 3 months with Lasix."</li>
+            <li><strong>Thyroid:</strong> "My doses seem low (50 mcg T4, 2.5 mcg T3). Most people with no thyroid need 100-150 mcg T4 and 5-10 mcg T3. Can we check my levels?"</li>
+            <li><strong>Pain medication:</strong> "Can we switch Tylenol #3 to regular Tylenol? The codeine causes severe constipation."</li>
+            <li><strong>Ozempic:</strong> "The 2 mg dose causes unbearable bloating. Can we try 1.5 mg temporarily?"</li>
+            <li><strong>Constipation:</strong> "I need prescriptions for Miralax and Docusate to take every day."</li>
+            <li><strong>Potassium supplement:</strong> "Should I take potassium pills with Lasix to prevent muscle weakness?"</li>
+            <li><strong>Cassava:</strong> "Should I avoid cassava completely with my thyroid condition?"</li>
         </ol>
     </div>
 
-    <div class="big-warning" style="margin-top: 50px; font-size: 28px;">
-        3 MOST IMPORTANT RULES:<br><br>
-        1️⃣ THYROID PILLS ALONE - WAIT 1 HOUR<br>
-        2️⃣ NO CASSAVA EVER<br>
-        3️⃣ NO TYLENOL #3 + BACLOFEN TOGETHER<br><br>
-        Follow these = Feel much better!
+    <div class="good-news" style="margin-top: 50px;">
+        <h2 style="color: #10b981; text-align: center; margin-bottom: 20px;">🎉 Good News!</h2>
+        <p style="font-size: 28px; text-align: center; line-height: 1.8;">
+            If you follow the diet:<br><br>
+            ✅ In 2 weeks: 50% less bloating<br>
+            ✅ In 3 months: Can walk easier, less pain<br>
+            ✅ In 6 months: Lose 30-40 lbs<br>
+            ✅ In 1 year: Might need 30-50% fewer medications!
+        </p>
     </div>
 
     <button class="button" onclick="window.print()">🖨️ PRINT THIS PAGE</button>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍽️ 7-Day Meal Plan - Edith Botsio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .nav-bar {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-links a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #f59e0b;
+            font-size: 44px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #f59e0b;
+            padding-bottom: 15px;
+        }
+
+        .day-plan {
+            background: #fef3c7;
+            border: 4px solid #f59e0b;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 15px;
+        }
+
+        .day-plan h2 {
+            color: #f59e0b;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .meal {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 6px solid #10b981;
+        }
+
+        .meal h3 {
+            font-size: 28px;
+            color: #10b981;
+            margin-bottom: 10px;
+        }
+
+        .meal-items {
+            font-size: 22px;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        .recipe-box {
+            background: #eff6ff;
+            border: 4px solid #3b82f6;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 15px;
+        }
+
+        .recipe-box h2 {
+            color: #3b82f6;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .recipe {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        .recipe h3 {
+            font-size: 28px;
+            color: #3b82f6;
+            margin-bottom: 10px;
+        }
+
+        .recipe .ingredients {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .recipe .steps {
+            font-size: 20px;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        .tip {
+            background: #d1fae5;
+            border: 3px solid #10b981;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .tip h3 {
+            color: #10b981;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .tip p {
+            font-size: 22px;
+            line-height: 1.6;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .back-home a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .back-home a:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .nav-bar {
+                display: none;
+            }
+            .back-home {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <div class="nav-links">
+            <a href="index.html">🏠 Home</a>
+            <a href="edith-simple-guide.html">📱 Simple Guide</a>
+            <a href="edith-good-foods-expanded.html">✅ All Safe Foods</a>
+            <a href="edith-meal-plans.html" style="background: #f59e0b; color: white;">🍽️ Meal Plans</a>
+            <a href="edith-daily-routine.html">📅 Daily Routine</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>🍽️ 7-Day Meal Plan</h1>
+
+        <div class="tip">
+            <h3>✅ ALL MEALS ARE:</h3>
+            <p>
+                • NO cassava (fufu/banku/gari)<br>
+                • NO fried foods<br>
+                • LOW sugar<br>
+                • LOW salt (no Maggi cubes)<br>
+                • HIGH fiber for constipation<br>
+                • Safe for diabetes, thyroid, heart failure<br><br>
+
+                <strong>Remember: Wait 1 hour after thyroid pills before breakfast!</strong>
+            </p>
+        </div>
+
+        <!-- DAY 1 -->
+        <div class="day-plan">
+            <h2>📅 DAY 1 - Monday</h2>
+
+            <div class="meal">
+                <h3>Breakfast (7:00 AM)</h3>
+                <div class="meal-items">
+                    • 5 prunes (for constipation)<br>
+                    • 2 boiled eggs<br>
+                    • 1 slice whole wheat bread<br>
+                    • Herbal tea (no sugar)<br>
+                    • 1 orange
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Lunch (12:00 PM)</h3>
+                <div class="meal-items">
+                    • Kontomire soup with fish<br>
+                    • Small yam fufu (fist size, NO cassava)<br>
+                    • Side: Sliced tomatoes and cucumber<br>
+                    • Water
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Snack (3:00 PM)</h3>
+                <div class="meal-items">
+                    • 1 cup papaya (pawpaw)<br>
+                    • 10 groundnuts
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Dinner (6:00 PM)</h3>
+                <div class="meal-items">
+                    • Grilled sardines<br>
+                    • Steamed spinach with garlic<br>
+                    • 1/2 cup brown rice<br>
+                    • Garden egg (eggplant)
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="day-plan">
+            <h2>📅 DAY 2 - Tuesday</h2>
+
+            <div class="meal">
+                <h3>Breakfast (7:00 AM)</h3>
+                <div class="meal-items">
+                    • Bowl of plain oatmeal with berries<br>
+                    • Boiled egg<br>
+                    • 1/2 grapefruit<br>
+                    • Green tea
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Lunch (12:00 PM)</h3>
+                <div class="meal-items">
+                    • Okra soup with tilapia<br>
+                    • Small plantain fufu (fist size)<br>
+                    • Sliced cucumber<br>
+                    • Water
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Snack (3:00 PM)</h3>
+                <div class="meal-items">
+                    • Apple with 1 tbsp groundnut butter<br>
+                    • Handful of almonds (10 nuts)
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Dinner (6:00 PM)</h3>
+                <div class="meal-items">
+                    • Grilled chicken (no skin)<br>
+                    • Steamed broccoli and carrots<br>
+                    • Small boiled yam<br>
+                    • Light soup (pepper soup)
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="day-plan">
+            <h2>📅 DAY 3 - Wednesday</h2>
+
+            <div class="meal">
+                <h3>Breakfast (7:00 AM)</h3>
+                <div class="meal-items">
+                    • Ewa agoyin (black-eyed peas) - small portion<br>
+                    • Steamed vegetables on side<br>
+                    • 1 slice whole grain bread<br>
+                    • Herbal tea
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Lunch (12:00 PM)</h3>
+                <div class="meal-items">
+                    • Groundnut soup (low salt) with fish<br>
+                    • Small yam fufu (fist size)<br>
+                    • Steamed kontomire<br>
+                    • Water
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Snack (3:00 PM)</h3>
+                <div class="meal-items">
+                    • 1 cup guava<br>
+                    • Small handful pumpkin seeds
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Dinner (6:00 PM)</h3>
+                <div class="meal-items">
+                    • Baked mackerel<br>
+                    • Cabbage stir-fry (little oil)<br>
+                    • Boiled sweet potato<br>
+                    • Fresh tomato salad
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 4 -->
+        <div class="day-plan">
+            <h2>📅 DAY 4 - Thursday</h2>
+
+            <div class="meal">
+                <h3>Breakfast (7:00 AM)</h3>
+                <div class="meal-items">
+                    • Scrambled eggs (2 eggs, little oil)<br>
+                    • Steamed spinach<br>
+                    • 1 slice whole wheat toast<br>
+                    • 5 prunes<br>
+                    • Orange juice (small glass)
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Lunch (12:00 PM)</h3>
+                <div class="meal-items">
+                    • Egusi soup (moderate amount) with fish<br>
+                    • Small plantain fufu<br>
+                    • Steamed okra on side<br>
+                    • Water
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Snack (3:00 PM)</h3>
+                <div class="meal-items">
+                    • 1/2 cup plain yogurt<br>
+                    • Handful of strawberries
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Dinner (6:00 PM)</h3>
+                <div class="meal-items">
+                    • Grilled tilapia<br>
+                    • Garden egg stew<br>
+                    • 1/2 cup brown rice<br>
+                    • Steamed green beans
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 5 -->
+        <div class="day-plan">
+            <h2>📅 DAY 5 - Friday</h2>
+
+            <div class="meal">
+                <h3>Breakfast (7:00 AM)</h3>
+                <div class="meal-items">
+                    • Millet porridge (no sugar, add cinnamon)<br>
+                    • Boiled egg<br>
+                    • 1 pear<br>
+                    • Herbal tea
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Lunch (12:00 PM)</h3>
+                <div class="meal-items">
+                    • Palm nut soup (moderate oil) with chicken<br>
+                    • Small yam fufu<br>
+                    • Steamed cabbage<br>
+                    • Water
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Snack (3:00 PM)</h3>
+                <div class="meal-items">
+                    • 1 cup watermelon<br>
+                    • 10 cashews
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Dinner (6:00 PM)</h3>
+                <div class="meal-items">
+                    • Red-red (bean stew) - moderate portion<br>
+                    • Boiled ripe plantain (1 small)<br>
+                    • Fried fish (grilled, not fried!)<br>
+                    • Fresh pepper and onions
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 6 -->
+        <div class="day-plan">
+            <h2>📅 DAY 6 - Saturday</h2>
+
+            <div class="meal">
+                <h3>Breakfast (7:00 AM)</h3>
+                <div class="meal-items">
+                    • 2 boiled eggs<br>
+                    • Steamed kontomire<br>
+                    • Boiled yam (small piece)<br>
+                    • 5 prunes<br>
+                    • Green tea
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Lunch (12:00 PM)</h3>
+                <div class="meal-items">
+                    • Light soup (pepper soup) with fish<br>
+                    • Small plantain fufu<br>
+                    • Boiled okra on side<br>
+                    • Water
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Snack (3:00 PM)</h3>
+                <div class="meal-items">
+                    • 1 orange<br>
+                    • Small handful groundnuts
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Dinner (6:00 PM)</h3>
+                <div class="meal-items">
+                    • Grilled chicken breast (no skin)<br>
+                    • Tomato stew (less oil)<br>
+                    • 1/2 cup Ofada rice<br>
+                    • Steamed carrots and green beans
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 7 -->
+        <div class="day-plan">
+            <h2>📅 DAY 7 - Sunday</h2>
+
+            <div class="meal">
+                <h3>Breakfast (7:00 AM)</h3>
+                <div class="meal-items">
+                    • Plain Greek yogurt with berries<br>
+                    • 1 slice whole grain toast<br>
+                    • Boiled egg<br>
+                    • 1 apple<br>
+                    • Herbal tea
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Lunch (12:00 PM)</h3>
+                <div class="meal-items">
+                    • Unripe plantain porridge with fish<br>
+                    • Steamed spinach on side<br>
+                    • Fresh tomatoes and pepper<br>
+                    • Water
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Snack (3:00 PM)</h3>
+                <div class="meal-items">
+                    • 1 cup papaya<br>
+                    • 1 tbsp chia seeds in water
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Dinner (6:00 PM)</h3>
+                <div class="meal-items">
+                    • Sardines (your favorite!)<br>
+                    • Garden egg stew<br>
+                    • Small boiled yam<br>
+                    • Steamed okra
+                </div>
+            </div>
+        </div>
+
+        <!-- RECIPES -->
+        <div class="recipe-box">
+            <h2>📖 SIMPLE RECIPES</h2>
+
+            <div class="recipe">
+                <h3>1. Low-Salt Kontomire Soup</h3>
+                <div class="ingredients">
+                    <strong>Ingredients:</strong><br>
+                    • 2 bunches kontomire (cocoyam leaves), washed and chopped<br>
+                    • 2 fresh tomatoes, blended<br>
+                    • 1 onion, diced<br>
+                    • 2 pieces fish (tilapia or mackerel)<br>
+                    • 1 tbsp peanut oil<br>
+                    • Fresh pepper to taste<br>
+                    • Herbs: basil, thyme, garlic (instead of Maggi cubes!)
+                </div>
+                <div class="steps">
+                    <strong>Steps:</strong><br>
+                    1. Heat oil in pot, add onions and garlic<br>
+                    2. Add blended tomatoes and fresh pepper, cook 5 min<br>
+                    3. Add water (2 cups) and herbs<br>
+                    4. Add kontomire leaves, cook 10 minutes<br>
+                    5. Add fish, cook another 5 minutes<br>
+                    6. Serve with small yam fufu
+                </div>
+            </div>
+
+            <div class="recipe">
+                <h3>2. Unripe Plantain Porridge</h3>
+                <div class="ingredients">
+                    <strong>Ingredients:</strong><br>
+                    • 2 unripe plantains, peeled and cut<br>
+                    • 1 cup spinach, chopped<br>
+                    • 200g fish (mackerel or sardines)<br>
+                    • 1 tbsp olive oil<br>
+                    • 1 onion, diced<br>
+                    • Fresh pepper<br>
+                    • Uziza spice (optional)
+                </div>
+                <div class="steps">
+                    <strong>Steps:</strong><br>
+                    1. Boil plantains in water until soft (15 min)<br>
+                    2. Mash lightly with fork<br>
+                    3. Add spinach, onions, and pepper<br>
+                    4. Add fish and oil<br>
+                    5. Cook together 5 more minutes<br>
+                    6. Serve hot
+                </div>
+            </div>
+
+            <div class="recipe">
+                <h3>3. Ewa Agoyin (Beans & Sauce)</h3>
+                <div class="ingredients">
+                    <strong>Ingredients:</strong><br>
+                    • 1 cup black-eyed peas or brown beans<br>
+                    • 3 fresh tomatoes<br>
+                    • 1 onion<br>
+                    • 2 fresh peppers<br>
+                    • 1 tbsp peanut oil<br>
+                    • Garlic, ginger
+                </div>
+                <div class="steps">
+                    <strong>Steps:</strong><br>
+                    1. Cook beans until very soft, mash slightly<br>
+                    2. Sauté onions in oil until dark brown<br>
+                    3. Add blended tomatoes and peppers<br>
+                    4. Cook on low heat for 20 minutes, stirring<br>
+                    5. Pour sauce over beans<br>
+                    6. Serve with steamed vegetables
+                </div>
+            </div>
+
+            <div class="recipe">
+                <h3>4. Healthy Okra Soup</h3>
+                <div class="ingredients">
+                    <strong>Ingredients:</strong><br>
+                    • 2 cups fresh okra, sliced (or dried okra soaked)<br>
+                    • 2 pieces fish<br>
+                    • 1 tomato, diced<br>
+                    • 1 onion, diced<br>
+                    • 1 tbsp peanut oil<br>
+                    • Fresh pepper<br>
+                    • Herbs instead of cubes
+                </div>
+                <div class="steps">
+                    <strong>Steps:</strong><br>
+                    1. Heat oil, add onions<br>
+                    2. Add tomatoes and pepper, cook 3 min<br>
+                    3. Add 2 cups water, bring to boil<br>
+                    4. Add okra, cook 10 minutes (should be slimy)<br>
+                    5. Add fish, cook 5 more minutes<br>
+                    6. Serve with plantain fufu
+                </div>
+            </div>
+        </div>
+
+        <div class="tip">
+            <h3>🥄 COOKING TIPS</h3>
+            <p>
+                <strong>Replace Maggi cubes with:</strong><br>
+                • Fresh garlic and ginger<br>
+                • Basil, thyme, rosemary<br>
+                • Grains of Selim (hwentia)<br>
+                • Calabash nutmeg<br>
+                • Fresh pepper and onions<br><br>
+
+                <strong>Reduce oil:</strong><br>
+                • Use 1 tbsp instead of 1/4 cup<br>
+                • Switch to olive oil or peanut oil<br>
+                • Grill or bake instead of frying<br><br>
+
+                <strong>Make fufu safe:</strong><br>
+                • 100% yam fufu (NO cassava mixed in!)<br>
+                • 100% plantain fufu<br>
+                • Small portion = your fist size<br>
+                • Ask seller "Is there cassava in this?"
+            </p>
+        </div>
+
+        <div class="tip">
+            <h3>🛒 SHOPPING LIST FOR WEEK</h3>
+            <p>
+                <strong>Proteins:</strong> 7 fish (sardines, tilapia, mackerel), 2 lbs chicken breast, 2 dozen eggs<br>
+                <strong>Vegetables:</strong> Kontomire (2 bunches), spinach (2 bunches), okra (2 lbs), tomatoes (2 lbs), onions, peppers, cabbage, carrots<br>
+                <strong>Starches:</strong> Yam (small), plantains (unripe and ripe), sweet potato, brown rice, oatmeal<br>
+                <strong>Fruits:</strong> Prunes (1 lb), papaya, oranges, apples, berries<br>
+                <strong>Beans:</strong> Black-eyed peas (1 lb), black beans (1 lb)<br>
+                <strong>Others:</strong> Groundnuts, whole wheat bread, olive oil, herbs
+            </p>
+        </div>
+
+        <div class="back-home">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>
